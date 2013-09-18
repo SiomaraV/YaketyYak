@@ -27,23 +27,40 @@
 
 > Para que este proyecto funcione necesitamos que el interesado visite nuestra página y se registre dando unos datos 
 > personales muy básicos que formarán su perfil. Los perfiles de los usuarios se agruparán por el país al que 
-> pertenezcan.
+> pertenezcan pudiendo acceder a ellos los demás usuarios registrados.
 
 > Cuando una persona ingrese en la página podrá acceder a un mapa mundi para escoger la zona del usuario con el que 
-> quiere mantener una conversación apareciéndole una lista de usuarios que vivan en el país escogido. Una vez en este paso
-> se podrá escoger un compañero de conversación mirando los perfiles de los usuarios para encontrar personas con gustos 
-> similares al interesado.
+> quiere mantener una conversación apareciéndole una lista de usuarios que vivan en el país escogido. Una vez en este 
+> paso se podrá escoger un compañero de conversación mirando los perfiles de los usuarios mostrados para encontrar 
+> personas con gustos similares al interesado.
+
+> Una vez encontrada la persona adecuada las dos personas se pondrán en contacto para iniciar una conversación en el
+> idioma deseado a través de un software de comunicación (Skype) pudiendo mantener un diálogo solo de voz o videollamada.
+
 
 ## ¿POR QUÉ YAKETY YAK?
 
-> Como todos sabemos, además de una buena idea de negocio y un buen desarrollo del mismo es necesario mostrarse atractivo ante
-> el público objetivo al que te diriges para así poder atraer su atención. Consideramos que el nombre del proyecto puede 
-> ser una buena herramienta para ese fin. Por ello, pretendiamos encontrar un nombre que evocse el hecho de poder hablar sin 
-> límite en inglés con nativos, algo que en ocasiones se nos presenta muy complicado e incluso para muchos imposible, ya sea 
-> por la falta de recursos económicos o simplemente por no haber tenido la oportunidad de conocer a ningún angloparlante.
-> Valorando estos aspectos surge la idea de llamar al proyecto Yakety Yak ya que sería una alternativa en inglés de
-> "bla bla bla" pero sin las posibles connotaciones negativas que este vocablo posee. 
+> Como todos sabemos, además de una buena idea de negocio y un buen desarrollo del mismo es necesario mostrarse 
+> atractivo ante el público objetivo al que te diriges para así poder atraer su atención. Consideramos que el nombre 
+> del proyecto puede ser una buena herramienta para ese fin. 
 
+> Por ello, pretendiamos encontrar un nombre que evocase el hecho de poder hablar sin límite en inglés con nativos, 
+> algo que en ocasiones se nos presenta muy complicado e incluso para muchos imposible, ya sea por la falta de recursos 
+> económicos o simplemente por no haber tenido la oportunidad de conocer a ningún angloparlante. 
+
+> Valorando estos aspectos surge la idea de llamar al proyecto **"Yakety Yak"** ya que sería una alternativa en inglés 
+> de "bla bla bla" pero sin las posibles connotaciones negativas que este vocablo posee. 
+
+
+## ¿POR QUÉ SKYPE?
+
+> A través de la experiencia personal y de la documentación hemos dado con varios métodos para mantener conversaciones 
+> a través de internet y hemos decidido decantantarnos por Skype debido a estos motivo:
+
+> + **Es mundialmente conocido:** Puede que haya un software de comunicación más potente o mejor desarrollado pero si le
+> ofrecemos al público una alternativa que no conocen pueden descartar nuestra página por desconfianza.
+> + **Es gratuito:** Aunque en el caso de las conversaciones en grupo hay que pagar una cuota mensual.
+> + **Es fácil de usar:* Si el usuario tiene que esforzarse demasiadopor entender el programa puede desistir. 
 
 
 
