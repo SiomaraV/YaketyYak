@@ -60,7 +60,8 @@
 > + **Es mundialmente conocido:** Puede que haya un software de comunicación más potente o mejor desarrollado pero si le
 > ofrecemos al público una alternativa que no conocen pueden descartar nuestra página por desconfianza.
 > + **Es gratuito:** Aunque en el caso de las conversaciones en grupo hay que pagar una cuota mensual.
-> + **Es fácil de usar:** Si el usuario tiene que esforzarse demasiadopor entender el programa puede desistir. 
+> + **Es fácil de usar:** Si el usuario tiene que esforzarse demasiado por entender el programa puede desistir y verse
+> obligado a buscar por su cuenta una alternativa, cosa que no nos interesa. 
 
 
 
