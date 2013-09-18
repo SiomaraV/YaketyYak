@@ -42,7 +42,7 @@
 > límite en inglés con nativos, algo que en ocasiones se nos presenta muy complicado e incluso para muchos imposible, ya sea 
 > por la falta de recursos económicos o simplemente por no haber tenido la oportunidad de conocer a ningún angloparlante.
 > Valorando estos aspectos surge la idea de llamar al proyecto Yakety Yak ya que sería una alternativa en inglés de
-> "bla bla bla" pero sin las posibles connotaciones negativas que posee. 
+> "bla bla bla" pero sin las posibles connotaciones negativas que este vocablo posee. 
 
 
 
