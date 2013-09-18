@@ -11,6 +11,7 @@
 > idiomas sin duda es el inglés, que cada día es más necesario para obtener un puesto de trabajo y desenvolverse en el
 > amplio mundo que ofrece la web.
 
+
 ## OBJETIVO
 
 > Con este proyecto pretendemos, en una primera etapa, poner en contacto a la población española con angloparlantes que 
@@ -32,6 +33,17 @@
 > quiere mantener una conversación apareciéndole una lista de usuarios que vivan en el país escogido. Una vez en este paso
 > se podrá escoger un compañero de conversación mirando los perfiles de los usuarios para encontrar personas con gustos 
 > similares al interesado.
+
+## ¿POR QUÉ YAKETY YAK?
+
+> Como todos sabemos, además de una buena idea de negocio y un buen desarrollo del mismo es necesario mostrarse atractivo ante
+> el público objetivo al que te diriges para así poder atraer su atención. Consideramos que el nombre del proyecto puede 
+> ser una buena herramienta para ese fin. Por ello, pretendiamos encontrar un nombre que evocse el hecho de poder hablar sin 
+> límite en inglés con nativos, algo que en ocasiones se nos presenta muy complicado e incluso para muchos imposible, ya sea 
+> por la falta de recursos económicos o simplemente por no haber tenido la oportunidad de conocer a ningún angloparlante.
+> Valorando estos aspectos surge la idea de llamar al proyecto Yakety Yak ya que sería una alternativa en inglés de
+> "bla bla bla" pero sin las posibles connotaciones negativas que posee. 
+
 
 
 
