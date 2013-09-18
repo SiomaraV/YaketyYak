@@ -1,4 +1,4 @@
-#PROYECTO CHICAS DAW
+#PROYECTO YAKETY YAK
 
 + **Ciclo:** 2º DAW.
 + **Curso:** 2013-2014.
