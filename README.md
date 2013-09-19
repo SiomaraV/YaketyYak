@@ -57,7 +57,7 @@
 >> + **Disponibilidad**: conoceremos cuando podemos contactar con este usuario.
 >> + **Estado**: conoceremos si está conectado en el momento actual o no.
 
->> + Se agregará una **foto de perfil** que será asignada de modo personal por cada usuario además de un **sistema de
+>> Se agregará una **foto de perfil** que será asignada de modo personal por cada usuario además de un **sistema de
 >> valoración a través de estrellas** para saber si ese usuario es bueno para mantener una conversación las cuales serán 
 >> asignadas por usuarios que ya hayan mantenido relación con esa persona.
 
