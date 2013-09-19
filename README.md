@@ -15,13 +15,13 @@
 ## OBJETIVO
 
 > Con este proyecto pretendemos, en una primera etapa, poner en contacto a la población española con angloparlantes que 
-> residan en cualquier lugar del mundo facilitando, de este modo,la práctica del inglés del único modo que se ha 
-> demostrado eficaz, hablando con nativos.
+> residan en cualquier lugar del mundo facilitando, de este modo, la práctica del inglés del único modo que se ha 
+> demostrado eficaz, hablando con nativos. Del mismo modo, los angloparlantes practicarán el español con nativos para
+> aumentar sus conocimientos estableciéndose una relación de mutuo beneficio.
 
-> Para ello trataremos de integrar en nuestra web un programa de videoconferencia como Skype o similar. Así mismo, 
-> queremos poder ofrecer a viajeros la posibilidad de contactar con personas que residan en su próximo destino para así 
-> poder planificar su viaje obteniendo información sobre lugares de interés, transportes, vestimenta recomendada...a 
-> la vez que practica inglés. 
+> Así mismo, queremos poder ofrecer a viajeros la posibilidad de contactar con personas que residan en su próximo 
+> destino para así poder planificar su viaje obteniendo información sobre lugares de interés, transportes, vestimenta 
+> recomendada... a la vez que practica inglés. 
 
 ## PLANTEAMIENTO
 
@@ -35,7 +35,9 @@
 > personas con gustos similares al interesado.
 
 > Una vez encontrada la persona adecuada las dos personas se pondrán en contacto para iniciar una conversación en el
-> idioma deseado a través de un software de comunicación (Skype) pudiendo mantener un diálogo solo de voz o videollamada.
+> idioma deseado a través de un chat integrado en la página. La idea es que ambas personas se beneficien de esta 
+> relación, así que en función del tiempo del que dispongan se llevarán a cabo conversaciones en emabos idiomas en el
+> orden en el que los interesados prefieran.
 
 
 ## ¿POR QUÉ YAKETY YAK?
@@ -52,16 +54,23 @@
 > de "bla bla bla" pero sin las posibles connotaciones negativas que este vocablo posee. 
 
 
-## ¿POR QUÉ SKYPE?
+## EN UN FUTURO... INTEGRACIÓN DE VIDEOLLAMADA
 
-> A través de la experiencia personal y de la documentación hemos dado con varios métodos para mantener conversaciones 
-> a través de internet y hemos decidido decantantarnos por Skype debido a estos motivo:
+> En un principio hemos pensado integrar un chat sencillo para que los interesados se pongan en contacto para empezar
+> a practicar idiomas extranjeros. Pero lo más recomendable es integrar un sistema de voz y/o video para practicar el
+> idioma hablado (el cual es el más demandado y difícil) además de hacer la relación más personal. Para conseguir este
+> objetivo habíamos pensado en el ya conocido mundialmente **SKYPE**.
 
-> + **Es mundialmente conocido:** Puede que haya un software de comunicación más potente o mejor desarrollado pero si le
-> ofrecemos al público una alternativa que no conocen pueden descartar nuestra página por desconfianza.
-> + **Es gratuito:** Aunque en el caso de las conversaciones en grupo hay que pagar una cuota mensual.
-> + **Es fácil de usar:** Si el usuario tiene que esforzarse demasiado por entender el programa puede desistir y verse
-> obligado a buscar por su cuenta una alternativa, cosa que no nos interesa. 
+>> ### ¿POR QUÉ SKYPE?
+
+>> A través de la experiencia personal y de la documentación hemos dado con varios métodos para mantener conversaciones 
+>> a través de internet y hemos decidido decantantarnos por Skype debido a estos motivo:
+
+>> + **Es mundialmente conocido:** Puede que haya un software de comunicación más potente o mejor desarrollado pero si le
+>> ofrecemos al público una alternativa que no conocen pueden descartar nuestra página por desconfianza.
+>> + **Es gratuito:** Aunque en el caso de las conversaciones en grupo hay que pagar una cuota mensual.
+>> + **Es fácil de usar:** Si el usuario tiene que esforzarse demasiado por entender el programa puede desistir y verse
+>> obligado a buscar por su cuenta una alternativa, cosa que no nos interesa. 
 
 
 
