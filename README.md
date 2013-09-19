@@ -16,7 +16,7 @@
 
 > Con este proyecto pretendemos, en una primera etapa, poner en contacto a la población española con angloparlantes que 
 > residan en cualquier lugar del mundo facilitando, de este modo, la práctica del inglés del único modo que se ha 
-> demostrado eficaz, hablando con nativos. Del mismo modo, los angloparlantes practicarán el español con nativos (de nuestro país) para
+> demostrado eficaz, hablando con nativos. Del mismo modo, los angloparlantes practicarán el español con nativos de nuestro país para
 > aumentar sus conocimientos estableciéndose una relación de mutuo beneficio.
 
 > Así mismo, queremos poder ofrecer a viajeros la posibilidad de contactar con personas que residan en su próximo 
@@ -33,15 +33,13 @@
 
 > Cuando una persona ingrese en la página podrá acceder a un mapa mundi para escoger la zona del usuario con el que 
 > quiere mantener una conversación apareciéndole una lista de usuarios que vivan en el país escogido. Una vez en este 
-> paso se podrá escoger un compañero de conversación (en función de su perfil, pudiendo elegir de este modo a aquella 
-> persona con la pensamos que tendremos más afinidad.) mirando los perfiles de los usuarios mostrados para encontrar 
-> personas con gustos similares al interesado.
+> paso se podrá escoger un compañero de conversación en función de su perfil, pudiendo elegir de este modo a aquella 
+> persona con la pensamos que tendremos más afinidad.
 
-> (Una vez seleccionado el perfil deseado el usuario solicitará cita con dicha persona para ver si es aceptado y poder iniciar 
-> una conversación en el idioma deseado a través de un chat integrado en la página).Una vez encontrada la persona adecuada las dos personas se pondrán en contacto para iniciar una conversación en el
-> idioma deseado a través de un chat integrado en la página. La idea es que ambas personas se beneficien de esta 
-> relación, así que en función del tiempo del que dispongan se llevarán a cabo conversaciones en ambos idiomas en el
-> orden en el que los interesados prefieran.
+> Una vez seleccionado el perfil deseado el usuario solicitará cita con dicha persona para ver si es aceptado y poder iniciar 
+> una conversación en el idioma deseado a través de un chat integrado en la página.
+> La idea es que ambas personas se beneficien de esta relación, así que en función del tiempo del que dispongan 
+> se llevarán a cabo conversaciones en ambos idiomas en el orden en el que los interesados prefieran.
 
 >> #### PERFIL DE USUARIO
 
@@ -82,7 +80,7 @@
 
 > En un principio hemos pensado integrar un chat sencillo para que los interesados se pongan en contacto para empezar
 > a practicar idiomas extranjeros. Pero lo más recomendable es integrar un sistema de voz y/o video para practicar el
-> idioma (de manera hablada) hablado (el cual es el más demandado y difícil) además de hacer la relación más personal. Para conseguir este
+> idioma de manera hablada (el cual es el más demandado y difícil) además de hacer la relación más personal. Para conseguir este
 > objetivo habíamos pensado en el ya conocido mundialmente **SKYPE**.
 
 >> ### ¿POR QUÉ SKYPE?
