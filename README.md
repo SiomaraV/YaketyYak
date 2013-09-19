@@ -52,8 +52,8 @@
 >> + **Edad** (opcional): edad del usuario.
 >> + **Profesión** (opcional): a qué se dedica actualmente.
 >> + **Aficiones**: cuales son sus hobbies.
->> + **Disponibilidad**: conoceremos cuando podemos contactar con este usuario.
->> + **Estado**: conoceremos si está conectado en el momento actual o no.
+>> + **Disponibilidad**: cuando podemos contactar con este usuario.
+>> + **Estado**: si está conectado en el momento actual o no.
 
 >> Se agregará una **foto de perfil** que será asignada de modo personal por cada usuario además de un **sistema de
 >> valoración a través de estrellas** para saber si ese usuario es bueno para mantener una conversación las cuales serán 
