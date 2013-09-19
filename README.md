@@ -43,6 +43,26 @@
 > relación, así que en función del tiempo del que dispongan se llevarán a cabo conversaciones en ambos idiomas en el
 > orden en el que los interesados prefieran.
 
+>> #### PERFIL DE USUARIO
+
+>> La intención de los perfiles es acercar a los diferentes usuarios a través de la facilitación de una serie de datos
+>> personales muy básicos:
+
+>> + **Nick**: cómo referirse al usuario.
+>> + **País**: donde vive actualmente.
+>> + **Idioma**: cuál es su lengua materna.
+>> + **Edad** (opcional): edad del usuario.
+>> + **Profesión** (opcional): a qué se dedica actualmente.
+>> + **Aficiones**: cuales son sus hobbies.
+>> + **Disponibilidad**: conoceremos cuando podemos contactar con este usuario.
+>> + **Estado**: conoceremos si está conectado en el momento actual o no.
+
+>> + Se agregará una **foto de perfil** que será asignada de modo personal por cada usuario además de un **sistema de
+>> valoración a través de estrellas** para saber si ese usuario es bueno para mantener una conversación las cuales serán 
+>> asignadas por usuarios que ya hayan mantenido relación con esa persona.
+
+>>> <img src="http://i156.photobucket.com/albums/t37/Rei_Yagami/perfil.jpg"/> --> Primer acercamiento al diseño del perfil
+
 
 ## ¿POR QUÉ YAKETY YAK?
 
