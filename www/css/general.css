@@ -3,6 +3,11 @@
 	font-family:cambria;
 }
 
+p{
+	color:skyblue;
+	font-family:tahoma;
+}
+
 @font-face {
 	 font-family:"Cambria";
 	 src:url("fonts/cambria.ttf");
@@ -22,7 +27,7 @@ body{
 
 #menu_container{
 	margin:0 auto;
-	width:60%;
+	width:55%;
 }
 
 img.logo{
@@ -52,7 +57,7 @@ div.login:hover{
 }
 	
 #container{
-	width:60%;
+	width:55%;
 	height:auto;
 	margin:0 auto;	
 	padding:1% 1%;
@@ -84,12 +89,11 @@ div.options, div.options1{
     float:left;
 	margin:1% 0;
 	background-color:#205877;
-	width:21.99%;
+	width:22.05%;
 	-webkit-border-radius: 4%;
 	border:1 solid black;
 	padding: 1% 1%; 
 	text-shadow: black 0.1em 0.1em 0.2em;
-
 }
 
 div.options{
@@ -105,10 +109,11 @@ img.options{
 	-webkit-border-radius: 4%;
 }
 
-td.number{
-	font-size:3em;
-	
+span.titulo{
+	font-size:20px;
+	color:skyblue;
 }
+
 
 
 /* --------- PIE ---------  */
@@ -126,7 +131,7 @@ td.number{
 #footer_container{
 	margin:0 auto;
 	padding-top:1%;
-	width:60%;
+	width:55%;
 }
 
 table{	
