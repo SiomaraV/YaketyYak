@@ -1,23 +1,30 @@
+/* Estilos generales de todo el documento */
 *{
 	margin:0;
 	font-family:cambria;
 }
 
+/* Estilo de parrafos */
 p{
-	color:skyblue;
-	font-family:tahoma;
+	color:7cc2c1;
+	font-size:0.75em;
 }
 
+/* Importar la fuente */
 @font-face {
 	 font-family:"Cambria";
 	 src:url("fonts/cambria.ttf");
 	 src:url("fonts/cambria_bold.ttf");
 }
 
+/* Estilo del body */
 body{				
-	background: -webkit-linear-gradient(#CEF6F5,skyblue);
+	background: -webkit-linear-gradient(#CEF6F5,#5ba8a7);
 }
-			
+
+/* --------- MENU ---------  */
+
+/* Fondo menu */			
 #menu{
 	background-color:white;
 	height:5%;
@@ -25,16 +32,19 @@ body{
 	padding-top: 0.2%;
 }
 
+/* Contenedor menu */
 #menu_container{
 	margin:0 auto;
-	width:55%;
+	width:60%;
 }
 
+/* Logo */
 img.logo{
 	height:95%;
 	float:left;
 }
 
+/* Botones para loguearse */
 div.login,div.login:hover{
 	width:10%;
 	float:right;
@@ -47,53 +57,76 @@ div.login,div.login:hover{
 }
 
 div.login{
-	color:#205877;
-	background-color:skyblue;
+	color:165c5b;
+	background-color:a2dbda;
 }
 
 div.login:hover{
-	color:skyblue;
-	background-color:#205877;
+	color:a2dbda;
+	background-color:165c5b;
 }
+
+/* Boton para el idioma */
+div.lan, div.lan:hover{
+	width:4%;
+	float:right;
+	padding: 0.5% 0.5%;	
+	margin-left:1%;
+	margin-top:1.1%;
+	text-align:center;
+	font-weight:bold;
+	-webkit-border-radius:5%;
+	
+}
+
+div.lan{
+	color:5ba8a7;
+	background-color:cef6f5;
+}
+
+div.lan:hover{
+	color:cef6f5;
+	background-color:5ba8a7;
+}
+
+/* --------- CONTENEDOR PRINCIPAL ---------  */
 	
 #container{
-	width:55%;
+	width:60%;
 	height:auto;
 	margin:0 auto;	
 	padding:1% 1%;
-	clear:both;
+	overflow:hidden;
 }
-			
+	
+/* Contenedor de la introduccion */	
 #intro{
 	margin:0 auto;
-	background-color:skyblue;
+	background-color:#5ba8a7;
 	height:auto;
 	padding:1% 1%;
 	-webkit-border-radius: 1%;
-	border:1 solid #205877;	
+	border:1px solid 165c5b;
 }
 
+/* Imagen de la introduccion */	
 img.intro{
 	height:50%;
-	-webkit-border-radius:1%;	
-}
-div.options:hover{
-text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,0 0 0.2em #87F;
-}
-div.options1:hover{
-text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,0 0 0.2em #87F;
+	-webkit-border-radius:1%;
+	border:1px solid 165c5b;	
 }
 
-
+/* Opciones de la pagina */	
 div.options, div.options1{
-    float:left;
-	margin:1% 0;
-	background-color:#205877;
-	width:22.05%;
-	-webkit-border-radius: 4%;
-	border:1 solid black;
+	float:left;	
+	width:21.99%;
+	margin-top:1%;
 	padding: 1% 1%; 
+	background: -webkit-linear-gradient(#5ba8a7,#165c5b);
+	text-align:center;
 	text-shadow: black 0.1em 0.1em 0.2em;
+	border:1 solid 022928;
+	-webkit-border-radius:4%;
 }
 
 div.options{
@@ -104,38 +137,45 @@ div.options1{
 	margin-right:0%;
 }
 
+div.options:hover, div.options1:hover{
+	box-shadow: 0 0 10px 022928;
+}
+
+/* Imagenes de opciones de la pagina */	
 img.options{
 	width:99%;
+	margin-bottom:2%;
 	-webkit-border-radius: 4%;
+	border:1px solid 022928;
+
 }
 
+/* Titulos de opciones de la pagina */	
 span.titulo{
-	font-size:20px;
-	color:skyblue;
+	font-size:1.1em;
+	color:cef6f5;
+	font-weight:bold;
 }
-
-
 
 /* --------- PIE ---------  */
 
 /* Pie completo */
 #footer{
-	background-color:black;
+	background-color:022928;
 	height:21.25%;
-	margin-top:1%;
 	clear:both;
-	border-top:5px solid #205877;	
+	border-top:5px solid #165c5b;	
 }
 
 /* Contenedor del Pie */
 #footer_container{
 	margin:0 auto;
 	padding-top:1%;
-	width:55%;
+	width:60%;
 }
 
 table{	
-	color:skyblue;
+	color:cef6f5;
 	width:100%;
 }
 
