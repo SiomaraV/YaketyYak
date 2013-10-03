@@ -111,7 +111,7 @@ div.lan:hover{
 
 /* Imagen de la introduccion */	
 img.intro{
-	height:50%;
+	height:55%;
 	-webkit-border-radius:1%;
 	border:1px solid 165c5b;	
 }
@@ -163,7 +163,7 @@ span.titulo{
 /* Pie completo */
 #footer{
 	background-color:022928;
-	height:21.25%;
+	padding-bottom:1%;
 	clear:both;
 	border-top:5px solid #165c5b;	
 }
