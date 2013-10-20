@@ -9,26 +9,39 @@
 		<!-- Caracteres especiales -->
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
+		<!-- Adaptacion para moviles especiales -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+     
 	</head>
 	
 	<body>
 		<!-- Totalidad del menu -->
-		<div id="menu">
-			<!-- Contenedor del menu -->
-			<div id="menu_container">
+		<div id="menu">	
 			
+			<!-- Contenedor del menu -->
+			<div class="menu-container">
+
 				<!-- Imagen del logo -->
-				<a href=""><img class="logo"src="img/logo.png"/></a>
-				
-				<!-- Botón para idioma -->
-				<a href=""><div class="lan">ES</div></a>
-				<!-- Botón para registrarse -->
-				<a href=""><div class="login">Registrar</div></a>
-				<!-- Botón para logearse -->
-				<a href=""><div class="login">Entrar</div></a>				
-				
-			<!-- Cierre del Contenedor del menu -->	
-			</div>
+				<div class="logo_container"><span class="logo">YakettyYak</span></div>
+				<!-- <a href=""><img class="logo"src="img/logo.png"/></a> -->
+
+				<!-- Navegador -->	
+				<div class="login-item">Entra</div>
+			 	<div class="login-item reg">Registrar</div>
+			  	<div class="lan-item">ES</div>
+
+			<!-- Cierre Contenedor del menu -->		
+			</div>	
+
+			<!-- menu movil -->
+			<div class="menu-movil">
+				<img class="menu_movil"src="img/icons/home.png"/>
+				<img class="menu_movil"src="img/icons/search.png"/>
+				<img class="menu_movil"src="img/icons/user.png"/>
+			<!-- Cierre menu del movil -->		
+			</div>	
+
 		<!-- Cierre de Totalidad del menu -->	
 		</div>
 		
@@ -36,82 +49,84 @@
 		<div id="container">
 			
 			<!-- Imagenes introductorias de la pagina -->
-			<div id="intro">
+			<div id="intro">				
 				<img class="intro" src="img/intro.jpg" />
-			</div>
-						
-			<!-- Opcion 1 -->
-			<a href=""><div class="options">
-				<img class="options" src="img/new.jpg">
-							
-				<span class="titulo">CREA UN PERFIL</span>
-				<p>Crea tu perfil personalizado, entra en la comunidad y navega</p>					
-			<!-- Cierre de Opcion 1 -->
-			</div></a>
+			</div>			
 			
-			<!-- Opcion 2 -->	
-				<a href=""><div class="options">
+			<div class="options-container">
+				<div class="flex-item 1">					
+					<img class="options" src="img/new.jpg">
+								
+					<span class="titulo">CREA UN PERFIL</span>
+					<p>Crea tu perfil personal y entra en la comunidad</p>						
+				</div>
+					  
+				<div class="flex-item">
 					<img class="options" src="img/map.jpg">
 							
 					<span class="titulo">ELIGE UN PAÍS</span>
-					<p>Elige el país donde quieres conocer distintas personas</p>
-				<!-- Cierre de Opcion 2 -->			
-				</div></a>
-						
-				<!-- Opcion 3 -->
-				<a href=""><div class="options">
+					<p>Elige el país donde quieres conocer gente</p>		
+				</div>
+					
+				<div class="flex-item 1">
 					<img class="options" src="img/talk.jpg">
 							
 					<span class="titulo">HABLA CON GENTE</span>
-					<p>Manten una conversación con quien quieras y cómo quieras</p>	
-									
-				<!-- Cierre de Opcion 3 -->				
-				</div></a>
-						
-				<!-- Opcion 4 -->
-				<a href=""><div class="options1">
+					<p>Manten una conversación con quien y cómo quieras</p>		
+				</div>
+					
+				<div class="flex-item">
 					<img class="options" src="img/travel.jpg">
 							
 					<span class="titulo">PLANIFICA TU VIAJE</span>
-					<p>Planifica y personaliza el viaje a tu próximo destino </p>			
-				<!-- Cierre de Opcion 4 -->				
-				</div></a>
-	
-			
+					<p>Planifica y personaliza el viaje a tu próximo destino </p>		
+				</div>
+			</div>				
 		</div>	
 		
 		<!-- Pie de la página -->
 		<div id="footer">
 			<!-- Contenedor del pie -->
-			<div id="footer_container">
-				<table>
-					<tr>
-						<td><span class= "cabecera">Mapa Web</span></br>
-							Inicio</br>
-							Avatar</br>
-							Usuarios</br>
-							Viajes</br>
-							Login</td>
-						<td valign=top><span class="cabecera">Redes Sociales</span></br>
-							Facebook</br>
-							Twitter</br>
-							Google+</br>
-							Youtube</td>
-						<td valign=top><span class= "cabecera">Accesos Directos</span></br>
-							Skype</br>
-							Socios</br>
-							Noticias</br></br></br></td>
-						<td valign=top class="contact"><span class= "cabecera">Contacta con nosotros</span></br>
-							659258023</br>
-							yaketyyak@yaketyyak.com</td>
-						<td valign=top><span class= "cabecera">Idiomas</span></br>
-							Español</br>
-							Inglés</br></td>
-					</tr>
-				</table>
+			<ul class="foot-container">
+				<li class="foot-item">					
+					<span class= "cabecera">Mapa</span></br>
+					<span class= "list">Inicio</span></br>
+					<span class= "list">Avatar</span></br>
+					<span class= "list">Usuarios</span></br>
+					<span class= "list">Viajes</span></br>					
+				</li>
 				
-			<!-- Cierre del Contenedor del pie -->
+				<li class="foot-item">					
+					<span class="cabecera">Social</span></br>
+					<span class= "list">Facebook</span></br>
+					<span class= "list">Twitter</span></br>
+					<span class= "list">Google+</span></br>
+					<span class= "list">Youtube</span>				
+				</li>				
+							
+				<li class="foot-item f1">					
+					<span class= "cabecera">Contacta</span></br>
+					<span class= "list">659258023</span></br>
+					<span class= "list">yaketyyak@yaketyyak.com</span>			
+				</li>
+				
+				<li class="foot-item">					
+					<span class= "cabecera">Idiomas</span></br>
+					<span class= "list">Español</span></br>
+					<span class= "list">Inglés</span>			
+				</li>				
+			</ul>
+
+			<!-- foot movil -->
+			<div class="foot-movil">
+				<img class="foot_movil"src="img/icons/email.png"/>
+				<img class="foot_movil"src="img/icons/facebook.png"/>
+				<img class="foot_movil"src="img/icons/g+.png"/>
+				<img class="foot_movil"src="img/icons/twitter.png"/>
+			<!-- Cierre foot del movil -->		
 			</div>
+				
+			
 		<!-- Cierre del Pie de la página -->	
 		</div>	
 	</body>	

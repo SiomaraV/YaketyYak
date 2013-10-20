@@ -1,4 +1,4 @@
-/* Estilos generales de todo el documento */
+ /* Estilos generales de todo el documento */
 *{
 	margin:0;
 	font-family:cambria;
@@ -7,7 +7,15 @@
 /* Estilo de parrafos */
 p{
 	color:7cc2c1;
-	font-size:0.9em;
+	font-size:80%;
+	display: flex;
+	display: -webkit-flex;
+  	flex-flow: row;
+	-webkit-flex-flow: row;
+
+ 	 -webkit-align-items: center; 
+  	align-items: center; 
+
 }
 
 /* Importar la fuente */
@@ -17,135 +25,177 @@ p{
 	 src:url("fonts/cambria_bold.ttf");
 }
 
+a{
+	text-decoration:none;
+}
+
 /* Estilo del body */
 body{				
 	background: -webkit-linear-gradient(#CEF6F5,#5ba8a7);
 }
+
 
 /* --------- MENU ---------  */
 
 /* Fondo menu */			
 #menu{
 	background-color:white;
-	height:5%;
 	-webkit-box-shadow: 0 0 10px 2px #888;
-	padding-top: 0.2%;
 }
 
 /* Contenedor menu */
-#menu_container{
+.menu-container{
 	margin:0 auto;
-	width:60%;
+	width:50%;
+	padding: 0.25% 0;
+
+	display: flex;
+	display: -webkit-flex;
+  	flex-flow: row;
+	-webkit-flex-flow: row;
+
+ 	 -webkit-align-items: center; 
+  	align-items: center; 
+ 	
+	-webkit-justify-content: flex-end; 
+  	justify-content: flex-end; 
+}
+
+.logo_container{
+
+	width:80%;
+	display: flex;
+	display: -webkit-flex;
+  	flex-flow: row;
+	-webkit-flex-flow: row;
+
+ 	 -webkit-align-items: center; 
+  	align-items: center;  	
+	-webkit-justify-content: flex-start; 
+  	justify-content: flex-start;
 }
 
 /* Logo */
+span.logo{
+	font-size:200%;
+	font-weight:bold;
+	color:5ba8a7;
+	position: relative;
+
+}
+
 img.logo{
 	height:95%;
 	float:left;
 }
 
-/* Botones para loguearse */
-div.login,div.login:hover{
-	width:10%;
-	float:right;
-	padding: 0.5% 0.5%;	
+.login-item, .lan-item{
+	
 	margin-left:1%;
-	margin-top:1.1%;
 	text-align:center;
 	font-weight:bold;
 	-webkit-border-radius:5%;
 }
 
-div.login{
+.login-item{
+	max-width:23%;
+	padding:0.5% 2%;
 	color:165c5b;
 	background-color:a2dbda;
 }
 
-div.login:hover{
-	color:a2dbda;
-	background-color:165c5b;
-}
-
-/* Boton para el idioma */
-div.lan, div.lan:hover{
-	width:4%;
-	float:right;
-	padding: 0.5% 0.5%;	
-	margin-left:1%;
-	margin-top:1.1%;
-	text-align:center;
-	font-weight:bold;
-	-webkit-border-radius:5%;
-	
-}
-
-div.lan{
+.lan-item{
+	max-width:10%;
+	padding:0.5% 1%;
 	color:5ba8a7;
 	background-color:cef6f5;
 }
 
-div.lan:hover{
+.login-item:hover{
+	color:a2dbda;
+	background-color:165c5b;
+}
+
+.lan-item:hover{
 	color:cef6f5;
 	background-color:5ba8a7;
 }
 
+.menu-movil{
+	display: none;
+}
+
 /* --------- CONTENEDOR PRINCIPAL ---------  */
 	
-#container{
-	width:60%;
+#container{	
+	width:50%;
 	height:auto;
 	margin:0 auto;	
-	padding:1% 1%;
+	padding:10;
 	overflow:hidden;
 }
 	
 /* Contenedor de la introduccion */	
 #intro{
+	display: -webkit-flex;
+    display: flex;
+	-webkit-flex-flow: row;
+    flex-flow: row;
+	
 	margin:0 auto;
-	background-color:#5ba8a7;
-	height:auto;
-	padding:1% 1%;
+	background-color:#5ba8a7;	
+	padding:1%;
 	-webkit-border-radius: 1%;
 	border:1px solid 165c5b;
 }
 
 /* Imagen de la introduccion */	
 img.intro{
-	height:55%;
+	max-width:100%;
+	height:auto;
 	-webkit-border-radius:1%;
 	border:1px solid 165c5b;	
 }
 
-/* Opciones de la pagina */	
-div.options, div.options1{
-	float:left;	
-	/* width:21.95%; */
-	width:22.02%;
-	margin-top:1%;
-	padding: 1% 1%; 
-	background: -webkit-linear-gradient(#5ba8a7,#165c5b);
-	text-align:center;
-	text-shadow: black 0.1em 0.1em 0.2em;
+
+/* Contenedor de la introduccion */	
+.options-container {
+	margin:0;
+	padding:0;
+			
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: row;
+	flex-wrap: row;
+	-webkit-justify-content: space-between; 
+	justify-content: space-between; 
+}
+
+.flex-item {
+	width: 47%;
+	height: auto;
+	margin-top:1.5%;
+	padding: 1%;	
 	border:1 solid 022928;
-	-webkit-border-radius:4%;
+	-webkit-border-radius:2%;
+	background: -webkit-linear-gradient(#5ba8a7,#165c5b);
+	text-shadow: black 0.1em 0.1em 0.2em;
+	text-align:center;
 }
 
-div.options{
-	margin-right:1%;
+.1{
+	margin-right:3%;
 }
 
-div.options1{
-	margin-right:0%;
-}
-
-div.options:hover, div.options1:hover{
-	box-shadow: 0 0 10px 022928;
+.flex-item:hover{
+	-webkit-box-shadow: 0 0 10px #022928;
 }
 
 /* Imagenes de opciones de la pagina */	
 img.options{
 	width:99%;
-	margin-bottom:2%;
+	height:auto;
+	margin-bottom:6%;
 	-webkit-border-radius: 4%;
 	border:1px solid 022928;
 
@@ -153,42 +203,277 @@ img.options{
 
 /* Titulos de opciones de la pagina */	
 span.titulo{
-	font-size:1.1em;
+	font-size:90%;
 	color:cef6f5;
 	font-weight:bold;
+}
+
+span.list{
+	font-size:82.5%;
 }
 
 /* --------- PIE ---------  */
 
 /* Pie completo */
 #footer{
-	background-color:022928;
-	padding-bottom:1%;
 	clear:both;
+	background-color:022928;
+	padding-bottom:10;	
 	border-top:5px solid #165c5b;	
 }
 
 /* Contenedor del Pie */
-#footer_container{
+.foot-container {
+	width:50%;
 	margin:0 auto;
-	padding-top:1%;
-	width:60%;
+	padding:0;
+	list-style: none;			
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: row;
+	flex-wrap: row;	
+}
+
+.foot-item {
+	min-width: 20%;	
+	margin-top:1.5%;
+	padding: 1%;	
+	-webkit-border-radius:4%;	
+	color:7cc2c1;
+	font-size:120%;
+}
+
+.f1{
+	min-width: 40%;
+	font-size:120%;
 }
 
 span.cabecera{
 	color:cef6f5;
 	font-weight:bold;
+	font-size:90%;
 }
 
-table{	
-	color:7cc2c1;
-	width:100%;
+.foot-movil{
+	display: none;
 }
 
-td{
-	width:20%;
+
+
+
+
+
+
+
+
+
+/*  ----------------- JQUERY PARA TAMAÑO MEDIO ----------------- */	
+@media(min-width: 1024px) {
+
+		.options-container{
+			-webkit-flex-wrap: row;
+			flex-wrap: row;			 
+		}
+
+		.flex-item {
+			max-width: 21.75%;	
+			margin-top:1.5%;
+			padding: 1%;	
+			-webkit-border-radius:4%;		
+		}
+		
+		.1{
+			margin-right:3%;
+		}
+
+		/* Imagenes de opciones de la pagina */	
+		img.options{
+			max-width:99.25%;
+			margin-bottom:1%;
+		}
+
+		/* Titulos de opciones de la pagina */	
+		span.titulo{
+			font-size:95%;
+		}
+
+		p{
+			font-size:80%;
+		}			
 }
 
-td.contact{
-	width:30%;
+
+
+
+
+
+
+/*  ----------------- JQUERY PARA TAMAÑO PEQUEÑO ----------------- */	
+@media (max-width: 1024px) and (min-width: 480px) {
+
+		span.logo{
+			font-size:175%;
+			
+		}
+
+		.login-item{
+			min-width: 15%;
+			font-size: 90%;
+		}
+
+		.lan-item{
+			min-width: 3%;
+			font-size: 90%;
+		}
+
+		.options-container {
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;			 
+		}
+
+		.flex-item {
+			max-width: 47%;
+			margin-top:1.5%;
+			padding: 1%;
+			-webkit-border-radius:2%;
+		}
+
+		.1{
+			margin-right:3%;
+		}
+
+		/* Imagenes de opciones de la pagina */	
+		img.options{
+			max-width:99.25%;
+			margin-bottom:1%;
+		}
+
+		/* Titulos de opciones de la pagina */	
+		span.titulo{
+			font-size:125%;
+		}
+
+		p{
+			display:none;
+		}
+
+		.foot-item {
+			min-width: 20%;	
+			font-size: 80%;
+
+		}
+
+		.f1{
+			min-width: 40%;
+		}
+}
+
+@media (max-width: 725px) and (min-width: 480px) {
+	.reg{
+		display: none;
+	}
+
+	span.list{
+		display: none;
+	}
+
+	.f1{
+			min-width: 30%;	
+	}
+
+
+}
+
+
+
+
+
+
+
+/*  ----------------- JQUERY PARA MOVILES ----------------- */	
+@media  (max-width: 480px) and (orientation: portrait) {
+
+		/* ELEMENTOS QUE DESAPARECEN.. */
+		/* ..del menu*/
+		.logo_container, .login-item, .lan-item {
+			display: none;
+		}
+
+		#intro, p{
+			display: none;
+		}
+
+		.foot-container {
+			display: none;
+		}
+
+		/* ELEMENTOS QUE CAMBIAN */
+
+		.menu-movil{
+			display:block;
+			width: 80%;
+			margin:0 auto;
+			padding: 2% 0;
+
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: row;
+			flex-wrap: row;
+			-webkit-justify-content: space-between; 
+			justify-content: space-between;
+		}
+
+		img.menu_movil{
+			width:15%;
+		}
+
+		#container{
+			width: 90%;
+		}
+
+		.options-container {
+			-webkit-flex-direction: column; 
+  			flex-direction: column; 
+
+		}
+
+		.flex-item {	
+			min-width:95%;	
+			padding: 2%;
+			margin-bottom: 2%;
+			-webkit-border-radius:2%;
+
+		}
+		
+
+		/* Imagenes de opciones de la pagina */	
+		img.options{
+			width: 99%;
+		}
+
+		/* Titulos de opciones de la pagina */	
+		span.titulo{
+			-webkit-justify-content: flex-end; 
+  			justify-content: flex-end; 
+
+			font-size:200%;
+		}
+
+		.foot-movil{
+			width: 90%;
+			margin:0 auto;			
+
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: row;
+			flex-wrap: row; 
+			-webkit-justify-content: space-between; 
+			justify-content: space-between;
+		}
+
+		img.foot_movil{
+			width:15%;
+			margin-top: 2.5%;
+		}
+
 }
