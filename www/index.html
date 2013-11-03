@@ -7,127 +7,120 @@
 		<link rel="stylesheet" type="text/css" href="css/general.css"/>	
 		
 		<!-- Caracteres especiales -->
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-		<!-- Adaptacion para moviles especiales -->
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-
-     
+		<meta charset="utf-8" />
+		
+		<!-- Idioma español -->
+		<html lang="es">
 	</head>
 	
 	<body>
 		<!-- Totalidad del menu -->
-		<div id="menu">	
+		<header class="menu">	
 			
 			<!-- Contenedor del menu -->
-			<div class="menu-container">
-
+			<header class="menu-container">
 				<!-- Imagen del logo -->
-				<div class="logo_container"><span class="logo">YakettyYak</span></div>
-				<!-- <a href=""><img class="logo"src="img/logo.png"/></a> -->
+				<nav class="logo_container"><span class="logo">YakettyYak</span></nav>				
 
 				<!-- Navegador -->	
-				<div class="login-item">Entra</div>
-			 	<div class="login-item reg">Registrar</div>
-			  	<div class="lan-item">ES</div>
-
+				<nav class="login-item">Entra</nav>
+			 	<nav class="login-item reg">Registrar</nav>
+			  	<nav class="lan-item">ES</nav>
 			<!-- Cierre Contenedor del menu -->		
-			</div>	
+			</header>	
 
 			<!-- menu movil -->
-			<div class="menu-movil">
-				<img class="menu_movil"src="img/icons/home.png"/>
-				<img class="menu_movil"src="img/icons/search.png"/>
-				<img class="menu_movil"src="img/icons/user.png"/>
+			<nav class="menu-movil">
+				<img class="img_movil"src="img/icons/home.png"/>
+				<img class="img_movil"src="img/icons/search.png"/>
+				<img class="img_movil"src="img/icons/user.png"/>
 			<!-- Cierre menu del movil -->		
-			</div>	
+			</nav>	
 
 		<!-- Cierre de Totalidad del menu -->	
-		</div>
+		</header>
 		
 		<!-- Contenedor principal -->
-		<div id="container">
+		<section class="container">
 			
 			<!-- Imagenes introductorias de la pagina -->
-			<div id="intro">				
-				<img class="intro" src="img/intro.jpg" />
-			</div>			
+			<section class="intro_container">				
+				<img class="intro_img" src="img/intro.jpg" />
+			</section>			
 			
-			<div class="options-container">
-				<div class="flex-item 1">					
-					<img class="options" src="img/new.jpg">
-								
-					<span class="titulo">CREA UN PERFIL</span>
-					<p>Crea tu perfil personal y entra en la comunidad</p>						
-				</div>
+			<!-- Contenedores de opciones -->
+			<section class="options-container">
+				<article class="flex-item">					
+					<img class="options" src="img/new.jpg">								
+					<header class="titulo">CREA UN PERFIL</header>
+					<aside>Crea tu perfil personal y entra en la comunidad</aside>						
+				</article>
 					  
-				<div class="flex-item">
-					<img class="options" src="img/map.jpg">
-							
-					<span class="titulo">ELIGE UN PAÍS</span>
-					<p>Elige el país donde quieres conocer gente</p>		
-				</div>
+				<article class="flex-item">
+					<img class="options" src="img/map.jpg">							
+					<header class="titulo">ELIGE UN PAÍS</header>
+					<aside>Elige el país donde quieres conocer gente</aside>		
+				</article>
 					
-				<div class="flex-item 1">
-					<img class="options" src="img/talk.jpg">
-							
-					<span class="titulo">HABLA CON GENTE</span>
-					<p>Manten una conversación con quien y cómo quieras</p>		
-				</div>
+				<article class="flex-item">
+					<img class="options" src="img/talk.jpg">							
+					<header class="titulo">HABLA CON GENTE</header>
+					<aside>Manten una conversación con quien y cómo quieras</aside>		
+				</article>
 					
-				<div class="flex-item">
-					<img class="options" src="img/travel.jpg">
-							
-					<span class="titulo">PLANIFICA TU VIAJE</span>
-					<p>Planifica y personaliza el viaje a tu próximo destino </p>		
-				</div>
-			</div>				
-		</div>	
+				<article class="flex-item">
+					<img class="options" src="img/travel.jpg">							
+					<header class="titulo">PLANIFICA TU VIAJE</header>
+					<aside>Planifica y personaliza el viaje a tu próximo destino </aside>		
+				</article>
+			<!-- Cierre Contenedores de opciones -->
+			</section>	
+		<!-- Cierre Contenedor principal -->
+		</section>	
 		
 		<!-- Pie de la página -->
-		<div id="footer">
+		<footer>
 			<!-- Contenedor del pie -->
 			<ul class="foot-container">
 				<li class="foot-item">					
-					<span class= "cabecera">Mapa</span></br>
-					<span class= "list">Inicio</span></br>
-					<span class= "list">Avatar</span></br>
-					<span class= "list">Usuarios</span></br>
-					<span class= "list">Viajes</span></br>					
+					<header class= "cabecera">Mapa</header>
+					<nav class= "list">Inicio</nav>
+					<nav class= "list">Avatar</nav>
+					<nav class= "list">Usuarios</nav>
+					<nav class= "list">Viajes</nav>					
 				</li>
 				
 				<li class="foot-item">					
-					<span class="cabecera">Social</span></br>
-					<span class= "list">Facebook</span></br>
-					<span class= "list">Twitter</span></br>
-					<span class= "list">Google+</span></br>
-					<span class= "list">Youtube</span>				
+					<header class="cabecera">Social</header>
+					<nav class= "list">Facebook</nav>
+					<nav class= "list">Twitter</nav>
+					<nav class= "list">Google+</nav>
+					<nav class= "list">Youtube</nav>				
 				</li>				
 							
 				<li class="foot-item f1">					
-					<span class= "cabecera">Contacta</span></br>
-					<span class= "list">659258023</span></br>
-					<span class= "list">yaketyyak@yaketyyak.com</span>			
+					<header class= "cabecera">Contacta</header>
+					<nav class= "list">659258023</nav>
+					<nav class= "list">yaketyyak@yaketyyak.com</nav>			
 				</li>
 				
 				<li class="foot-item">					
-					<span class= "cabecera">Idiomas</span></br>
-					<span class= "list">Español</span></br>
-					<span class= "list">Inglés</span>			
+					<header class= "cabecera">Idiomas</header>
+					<nav class= "list">Español</nav>
+					<nav class= "list">Inglés</nav>			
 				</li>				
 			</ul>
 
 			<!-- foot movil -->
-			<div class="foot-movil">
-				<img class="foot_movil"src="img/icons/email.png"/>
-				<img class="foot_movil"src="img/icons/facebook.png"/>
-				<img class="foot_movil"src="img/icons/g+.png"/>
-				<img class="foot_movil"src="img/icons/twitter.png"/>
+			<nav class="foot-movil">
+				<img class="foot_img"src="img/icons/email.png"/>
+				<img class="foot_img"src="img/icons/facebook.png"/>
+				<img class="foot_img"src="img/icons/g+.png"/>
+				<img class="foot_img"src="img/icons/twitter.png"/>
 			<!-- Cierre foot del movil -->		
-			</div>
-				
+			</nav>				
 			
 		<!-- Cierre del Pie de la página -->	
-		</div>	
+		</footer>	
 	</body>	
 </html>

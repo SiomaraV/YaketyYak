@@ -5,17 +5,16 @@
 }
 
 /* Estilo de parrafos */
-p{
+aside{
 	color:7cc2c1;
 	font-size:80%;
+	
 	display: flex;
-	display: -webkit-flex;
+	display: -webkit-flex;	
   	flex-flow: row;
 	-webkit-flex-flow: row;
-
  	 -webkit-align-items: center; 
   	align-items: center; 
-
 }
 
 /* Importar la fuente */
@@ -25,6 +24,7 @@ p{
 	 src:url("fonts/cambria_bold.ttf");
 }
 
+/* Enlaces */
 a{
 	text-decoration:none;
 }
@@ -34,11 +34,10 @@ body{
 	background: -webkit-linear-gradient(#CEF6F5,#5ba8a7);
 }
 
-
 /* --------- MENU ---------  */
 
 /* Fondo menu */			
-#menu{
+.menu{
 	background-color:white;
 	-webkit-box-shadow: 0 0 10px 2px #888;
 }
@@ -53,22 +52,19 @@ body{
 	display: -webkit-flex;
   	flex-flow: row;
 	-webkit-flex-flow: row;
-
  	 -webkit-align-items: center; 
-  	align-items: center; 
- 	
+  	align-items: center;  	
 	-webkit-justify-content: flex-end; 
   	justify-content: flex-end; 
 }
 
 .logo_container{
-
 	width:80%;
+	
 	display: flex;
 	display: -webkit-flex;
   	flex-flow: row;
 	-webkit-flex-flow: row;
-
  	 -webkit-align-items: center; 
   	align-items: center;  	
 	-webkit-justify-content: flex-start; 
@@ -80,17 +76,10 @@ span.logo{
 	font-size:200%;
 	font-weight:bold;
 	color:5ba8a7;
-	position: relative;
-
 }
 
-img.logo{
-	height:95%;
-	float:left;
-}
-
-.login-item, .lan-item{
-	
+/* Botones menu */
+.login-item, .lan-item{	
 	margin-left:1%;
 	text-align:center;
 	font-weight:bold;
@@ -121,38 +110,36 @@ img.logo{
 	background-color:5ba8a7;
 }
 
+/* Menu solo para movil */
 .menu-movil{
 	display: none;
 }
 
 /* --------- CONTENEDOR PRINCIPAL ---------  */
 	
-#container{	
+.container{	
 	width:50%;
-	height:auto;
 	margin:0 auto;	
 	padding:10;
-	overflow:hidden;
 }
 	
 /* Contenedor de la introduccion */	
-#intro{
-	display: -webkit-flex;
-    display: flex;
-	-webkit-flex-flow: row;
-    flex-flow: row;
-	
+.intro_container{
 	margin:0 auto;
 	background-color:#5ba8a7;	
 	padding:1%;
 	-webkit-border-radius: 1%;
 	border:1px solid 165c5b;
+
+	display: -webkit-flex;
+    display: flex;
+	-webkit-flex-flow: row;
+    flex-flow: row;
 }
 
 /* Imagen de la introduccion */	
-img.intro{
+.intro_img{
 	max-width:100%;
-	height:auto;
 	-webkit-border-radius:1%;
 	border:1px solid 165c5b;	
 }
@@ -160,9 +147,6 @@ img.intro{
 
 /* Contenedor de la introduccion */	
 .options-container {
-	margin:0;
-	padding:0;
-			
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-wrap: row;
@@ -172,19 +156,13 @@ img.intro{
 }
 
 .flex-item {
-	width: 47%;
-	height: auto;
-	margin-top:1.5%;
-	padding: 1%;	
-	border:1 solid 022928;
-	-webkit-border-radius:2%;
-	background: -webkit-linear-gradient(#5ba8a7,#165c5b);
+	width:47%;
+	padding:1%;	
 	text-shadow: black 0.1em 0.1em 0.2em;
 	text-align:center;
-}
-
-.1{
-	margin-right:3%;
+	-webkit-border-radius:2%;
+	background: -webkit-linear-gradient(#5ba8a7,#165c5b);
+	border:1 solid 022928;
 }
 
 .flex-item:hover{
@@ -192,33 +170,30 @@ img.intro{
 }
 
 /* Imagenes de opciones de la pagina */	
-img.options{
+.options{
 	width:99%;
-	height:auto;
 	margin-bottom:6%;
 	-webkit-border-radius: 4%;
 	border:1px solid 022928;
-
 }
 
 /* Titulos de opciones de la pagina */	
-span.titulo{
+.titulo{
 	font-size:90%;
 	color:cef6f5;
 	font-weight:bold;
 }
 
-span.list{
+.list{
 	font-size:82.5%;
 }
 
 /* --------- PIE ---------  */
 
 /* Pie completo */
-#footer{
-	clear:both;
-	background-color:022928;
-	padding-bottom:10;	
+footer{
+	padding-bottom:1%;
+	background-color:022928;		
 	border-top:5px solid #165c5b;	
 }
 
@@ -227,7 +202,8 @@ span.list{
 	width:50%;
 	margin:0 auto;
 	padding:0;
-	list-style: none;			
+	list-style: none;
+	
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-wrap: row;
@@ -248,7 +224,7 @@ span.list{
 	font-size:120%;
 }
 
-span.cabecera{
+.cabecera{
 	color:cef6f5;
 	font-weight:bold;
 	font-size:90%;
@@ -281,23 +257,19 @@ span.cabecera{
 			padding: 1%;	
 			-webkit-border-radius:4%;		
 		}
-		
-		.1{
-			margin-right:3%;
-		}
 
 		/* Imagenes de opciones de la pagina */	
-		img.options{
+		.options{
 			max-width:99.25%;
 			margin-bottom:1%;
 		}
 
 		/* Titulos de opciones de la pagina */	
-		span.titulo{
+		.titulo{
 			font-size:95%;
 		}
 
-		p{
+		aside{
 			font-size:80%;
 		}			
 }
@@ -343,24 +315,23 @@ span.cabecera{
 		}
 
 		/* Imagenes de opciones de la pagina */	
-		img.options{
+		.options{
 			max-width:99.25%;
 			margin-bottom:1%;
 		}
 
 		/* Titulos de opciones de la pagina */	
-		span.titulo{
+		.titulo{
 			font-size:125%;
 		}
 
-		p{
+		aside{
 			display:none;
 		}
 
 		.foot-item {
 			min-width: 20%;	
 			font-size: 80%;
-
 		}
 
 		.f1{
@@ -373,15 +344,13 @@ span.cabecera{
 		display: none;
 	}
 
-	span.list{
+	.list{
 		display: none;
 	}
 
 	.f1{
-			min-width: 30%;	
+		min-width: 30%;	
 	}
-
-
 }
 
 
@@ -399,7 +368,7 @@ span.cabecera{
 			display: none;
 		}
 
-		#intro, p{
+		.intro_container, aside{
 			display: none;
 		}
 
@@ -413,7 +382,8 @@ span.cabecera{
 			display:block;
 			width: 80%;
 			margin:0 auto;
-			padding: 2% 0;
+			padding:2%;
+			margin-bottom:2%;
 
 			display: -webkit-flex;
 			display: flex;
@@ -423,57 +393,54 @@ span.cabecera{
 			justify-content: space-between;
 		}
 
-		img.menu_movil{
+		.img_movil{
 			width:15%;
 		}
 
-		#container{
+		.container{
 			width: 90%;
 		}
 
 		.options-container {
 			-webkit-flex-direction: column; 
-  			flex-direction: column; 
-
+  			flex-direction: column;
 		}
 
 		.flex-item {	
 			min-width:95%;	
 			padding: 2%;
-			margin-bottom: 2%;
+			margin-bottom: 4%;
 			-webkit-border-radius:2%;
-
-		}
-		
+		}		
 
 		/* Imagenes de opciones de la pagina */	
-		img.options{
+		.options{
 			width: 99%;
+			margin-bottom: 0%;
 		}
 
 		/* Titulos de opciones de la pagina */	
-		span.titulo{
+		.titulo{
 			-webkit-justify-content: flex-end; 
-  			justify-content: flex-end; 
-
+  			justify-content: flex-end; 			
 			font-size:200%;
 		}
 
 		.foot-movil{
 			width: 90%;
-			margin:0 auto;			
+			margin:0 auto;
+			padding:3%;
+			margin-top:0%;
 
 			display: -webkit-flex;
-			display: flex;
+			display: flex;			
 			-webkit-flex-wrap: row;
-			flex-wrap: row; 
+			flex-wrap: row; 			
 			-webkit-justify-content: space-between; 
 			justify-content: space-between;
 		}
 
-		img.foot_movil{
+		.foot_img{
 			width:15%;
-			margin-top: 2.5%;
 		}
-
 }
