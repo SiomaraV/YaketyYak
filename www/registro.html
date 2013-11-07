@@ -1,0 +1,166 @@
+<html lang="es">
+
+	<head>
+		<!-- Título de la página -->
+		<title>Registro</title>
+		
+		<!-- Hoja de estilos general -->
+		<link rel="stylesheet" type="text/css" href="css/general.css"/>	
+		<!-- Hoja estilos registro -->
+		<link rel="stylesheet" type="text/css" href="css/registro.css"/>
+		
+		<!-- Caracteres especiales -->
+		<meta charset="utf-8" />
+
+	</head>
+	
+	<body>
+		<!-- Totalidad del menu -->
+		<header class="menu">	
+			
+			<!-- Contenedor del menu -->
+			<header class="menu-container">
+				<!-- Imagen del logo -->
+				<nav class="logo_container"><span class="logo"><a href="index.html">YakettyYak</a></span></nav>				
+
+				<!-- Navegador -->	
+				<nav class="login-item">Entra</nav>
+			 	<nav class="login-item reg"><a href="registro.html">Registrar</a></nav>
+			  	<nav class="lan-item">ES</nav>
+			<!-- Cierre Contenedor del menu -->		
+			</header>	
+
+			<!-- menu movil -->
+			<nav class="menu-movil">
+				<img class="img_movil"src="img/icons/home.png"/>
+				<img class="img_movil"src="img/icons/search.png"/>
+				<img class="img_movil"src="img/icons/user.png"/>
+			<!-- Cierre menu del movil -->		
+			</nav>	
+
+		<!-- Cierre de Totalidad del menu -->	
+		</header>
+		
+		<!-- Contenedor principal -->
+		<section class="container">
+		
+			<!-- Inicio de formulario -->
+			<form method="post" action="registro.php">
+			
+				<!-- Datos personales -->
+				<section class="form_container">					
+					
+					<header class="titulo">Nombre *</header>
+					<input type="text" name="nombre" value="Nombre">
+					<input type="text" name="apellido" value="Apellido">
+					
+					<header class="titulo">Fecha de Nacimiento *</header>
+					<input type="text" name="dia" value="Día">
+					<input type="text" name="mes" value="Mes">
+					<input type="text" name="ano" value="Año">					
+					
+					<header class="titulo">Sexo</header>
+					<input type="radio" name="sexo" value="hombre" checked>Hombre
+					<input type="radio" name="sexo" value="mujer">Mujer
+					<input type="radio" name="sexo" value="no_especificado">No Especificado 
+					
+					<header class="titulo">País *</header>
+					<input type="text" name="pais" value="¿Donde vives?"> 
+					
+					<header class="titulo">Código Postal *</header>
+					<input type="text" name="cp" value="CP"> 
+					
+				<!-- Cierre Datos Personales -->
+				</section>	
+			
+			
+				<!-- Datos Usuario -->
+				<section class="form_container">					
+					
+					<header class="titulo">Nick *</header>
+					<input type="text" name="nick" value="Nick">
+						
+					<header class="titulo">Password *</header>
+					<input type="password" name="contrasena">
+					<input type="password" name="contrasena_confirmar"> 
+						
+					<header class="titulo">E-Mail *</header>
+					<input type="text" name="email" value="E-Mail">
+					<input type="text" name="email_confirmar" value="Confirmar E-Mail">
+					
+				<!-- Cierre Datos Usuario -->
+				</section>	
+				
+				
+				<!-- Datos Interes -->
+				<section class="form_container">
+										
+					<header class="titulo">Idioma *</header>
+					<input type="text" name="idioma" value="Principal idioma"> 
+					
+					<header class="titulo">Profesión</header>
+					<input type="text" name="profesion" value="¿A qué te dedicas?"> 
+					
+					<header class="titulo">Aficiones</header>
+					<textarea name="aficiones" cols="50" rows="5">¿Cuales son tus aficiones?</textarea> 
+					
+					<header class="titulo">Disponibilidad *</header>
+					<input type="text" name="disponibilidad" value="horario en el que te conectas"> 
+										
+				<!-- Cierre Datos Interes -->
+				</section>	
+			
+			
+				<!-- Borrar y Enviar -->				
+				<section class="form_container botones">				
+					
+					<input type="reset" value="Borrar" class="boton">
+					<input type="submit" value="Enviar" class="boton">
+				
+				<!-- Cierre Borrar y Enviar -->
+				</section>	
+				
+			<!-- Cierre de formulario -->
+			</form>
+			
+		<!-- Cierre Contenedor principal -->
+		</section>	
+		
+		<!-- Pie de la página -->
+		<footer>
+			<!-- Contenedor del pie -->
+			<ul class="foot-container">
+				<li class="foot-item">					
+					<header class= "cabecera">Mapa</header>
+					<nav class= "list">Inicio</nav>
+					<nav class= "list">Avatar</nav>
+					<nav class= "list">Usuarios</nav>
+					<nav class= "list">Viajes</nav>					
+				</li>							
+								
+				<li class="foot-item">					
+					<header class= "cabecera">Idiomas</header>
+					<nav class= "list">Español</nav>
+					<nav class= "list">Inglés</nav>			
+				</li>
+
+				<li class="foot-item">					
+					<header class= "cabecera">Contacta</header>
+					<nav class= "list">659258023</nav>
+					<nav class= "list">yaketyyak@yaketyyak.com</nav>			
+				</li>
+			</ul>
+
+			<!-- foot movil -->
+			<nav class="foot-movil">
+				<img class="foot_img"src="img/icons/email.png"/>
+				<img class="foot_img"src="img/icons/facebook.png"/>
+				<img class="foot_img"src="img/icons/g+.png"/>
+				<img class="foot_img"src="img/icons/twitter.png"/>
+			<!-- Cierre foot del movil -->		
+			</nav>				
+			
+		<!-- Cierre del Pie de la página -->	
+		</footer>	
+	</body>	
+</html>
