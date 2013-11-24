@@ -5,7 +5,9 @@
 		<title>Yakkety Yak</title>
 		
 		<!-- Hoja de estilos general -->
-		<link rel="stylesheet" type="text/css" href="css/base.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<!-- Hoja de estilos login -->
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>	
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="img/favicon.ico">
@@ -21,27 +23,14 @@
 			<!-- Contenedor del menu por defecto -->
 			<header class="menu-container default">
 				<!-- Imagen del logo -->
-				<nav class="logo_container"><span class="logo"><a class="logo_link" href="index.html">YakettyYak</a></span></nav>				
+				<nav class="logo_container"><span class="logo"><a href="index.html">YakettyYak</a></span></nav>				
 
 				<!-- Navegador -->	
 				<nav class="login-item"><a href="login.html">Entra</a></nav>
 			 	<nav class="login-item reg"><a href="registro.html">Registrar</a></nav>
 			  	<nav class="lan-item">ES</nav>
 			<!-- Cierre Contenedor del menu -->		
-			</header>	
-
-			<!-- Contenedor del menu cuando te logueas -->
-			<header class="menu-container_logueado">
-				<!-- Imagen del logo -->
-				<nav class="logo_container"><img class="logo_img" src="img/logo.png"></nav>				
-
-				<!-- Navegador -->					
-			 	<nav><img class="logo_button" src="img/icons/settings.png"></nav>
-			 	<nav><img class="logo_button" src="img/icons/logout.png"></nav>
-			 	<nav><img class="logo_button" src="img/icons/default_user.png"></nav>
-			  	<nav class="lan-item">ES</nav>
-			<!-- Cierre Contenedor del menu -->		
-			</header>
+			</header>				
 
 			<!-- menu movil -->
 			<nav class="menu-movil">
@@ -56,39 +45,29 @@
 		
 		<!-- Contenedor principal -->
 		<section class="container">
-			
-			<!-- Imagenes introductorias de la pagina -->
-			<section class="intro_container">				
-				<img class="intro_img" src="img/intro.jpg" />
-			</section>			
-			
-			<!-- Contenedores de opciones -->
-			<section class="options-container">
-				<article class="flex-item">					
-					<img class="options" src="img/new.jpg">								
-					<header class="titulo">CREA UN PERFIL</header>
-					<aside>Crea tu perfil personal y entra en la comunidad</aside>						
-				</article>
-					  
-				<article class="flex-item">
-					<img class="options" src="img/map.jpg">							
-					<header class="titulo">ELIGE UN PAÍS</header>
-					<aside>Elige el país donde quieres conocer gente</aside>		
-				</article>
-					
-				<article class="flex-item">
-					<img class="options" src="img/talk.jpg">							
-					<header class="titulo">HABLA CON GENTE</header>
-					<aside>Manten una conversación con quien y cómo quieras</aside>		
-				</article>
-					
-				<article class="flex-item">
-					<img class="options" src="img/travel.jpg">							
-					<header class="titulo">PLANIFICA TU VIAJE</header>
-					<aside>Planifica y personaliza el viaje a tu próximo destino </aside>		
-				</article>
-			<!-- Cierre Contenedores de opciones -->
+
+			<!-- Datos login -->
+			<section class="login_container">
+		
+				<!-- Inicio de formulario -->
+				<form method="post" action="login.php">			
+					<section class="form_container">
+						<ul>							
+							<li><input class="login_input" type="text" name="email" placeholder="Introduce tu email"></li>
+							<li><input class="login_input" type="pass" name="password" placeholder="Introduce tu password"></li>
+							<li>
+								<input type = "checkbox" name="recordar"/><span class="titulo">Recordarme</span>							
+								<input class="boton" type="submit" value="Enviar">
+							</li>						
+						</ul>
+					</section>				
+				
+				<!-- Cierre de formulario -->
+				</form>
+
+			<!-- Cierre Datos login -->	
 			</section>	
+			
 		<!-- Cierre Contenedor principal -->
 		</section>			
 		

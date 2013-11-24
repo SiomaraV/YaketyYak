@@ -5,7 +5,7 @@
 		<title>Registro</title>
 		
 		<!-- Hoja de estilos general -->
-		<link rel="stylesheet" type="text/css" href="css/general.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>	
 		<!-- Hoja estilos registro -->
 		<link rel="stylesheet" type="text/css" href="css/registro.css"/>
 		
@@ -21,17 +21,17 @@
 		<!-- Totalidad del menu -->
 		<header class="menu">	
 			
-			<!-- Contenedor del menu -->
-			<header class="menu-container">
+			<!-- Contenedor del menu por defecto -->
+			<header class="menu-container default">
 				<!-- Imagen del logo -->
 				<nav class="logo_container"><span class="logo"><a href="index.html">YakettyYak</a></span></nav>				
 
 				<!-- Navegador -->	
-				<nav class="login-item">Entra</nav>
+				<nav class="login-item"><a href="login.html">Entra</a></nav>
 			 	<nav class="login-item reg"><a href="registro.html">Registrar</a></nav>
 			  	<nav class="lan-item">ES</nav>
 			<!-- Cierre Contenedor del menu -->		
-			</header>	
+			</header>				
 
 			<!-- menu movil -->
 			<nav class="menu-movil">
@@ -54,24 +54,80 @@
 				<section class="form_container">					
 					
 					<header class="titulo">Nombre *</header>
-					<input type="text" name="nombre" value="Nombre">
-					<input type="text" name="apellido" value="Apellido">
+					<input type="text" name="nombre" placeholder="Nombre">
+					<input type="text" name="apellido" placeholder="Apellido">
 					
 					<header class="titulo">Fecha de Nacimiento *</header>
-					<input type="text" name="dia" value="Día">
-					<input type="text" name="mes" value="Mes">
-					<input type="text" name="ano" value="Año">					
+					<select name="dia_nacimiento">
+					   <option value="1">1</option> 
+					   <option value="2">2</option> 
+					   <option value="3">3</option>
+					   <option value="4">4</option> 
+					   <option value="5">5</option> 
+					   <option value="6">6</option>
+					   <option value="7">7</option> 
+					   <option value="8">8</option> 
+					   <option value="9">9</option>
+					   <option value="10">10</option> 
+					   <option value="11">11</option> 
+					   <option value="12">12</option>
+					   <option value="13">13</option> 
+					   <option value="14">14</option> 
+					   <option value="15">15</option>
+					   <option value="16">16</option> 
+					   <option value="17">17</option> 
+					   <option value="18">18</option>
+					   <option value="19">19</option> 
+					   <option value="20">20</option> 
+					   <option value="21">21</option>
+					   <option value="22">22</option> 
+					   <option value="23">23</option> 
+					   <option value="24">24</option> 
+					   <option value="25">25</option> 
+					   <option value="26">26</option> 
+					   <option value="27">27</option>
+					   <option value="28">28</option> 
+					   <option value="29">29</option> 
+					   <option value="30">30</option>
+					   <option value="31">31</option> 					    
+					</select>
+
+					<select name="mes_nacimiento">
+					   <option value="1">1</option> 
+					   <option value="2">2</option> 
+					   <option value="3">3</option>
+					   <option value="4">4</option> 
+					   <option value="5">5</option> 
+					   <option value="6">6</option>
+					   <option value="7">7</option> 
+					   <option value="8">8</option> 
+					   <option value="9">9</option>
+					   <option value="10">10</option> 
+					   <option value="11">11</option> 
+					   <option value="12">12</option>  
+					</select>
+
+					<select name="anyo_nacimiento">
+					   <option value="1">Windows Vista</option> 
+					   <option value="2">Windows 7</option> 
+					   <option value="3">Windows XP</option>
+					   <option value="10">Fedora</option> 
+					   <option value="11">Debian</option> 
+					   <option value="12">Suse</option> 
+					</select>					
 					
 					<header class="titulo">Sexo</header>
-					<input type="radio" name="sexo" value="hombre" checked>Hombre
-					<input type="radio" name="sexo" value="mujer">Mujer
-					<input type="radio" name="sexo" value="no_especificado">No Especificado 
+					<select name="sexo">
+					   <option value="hombre">Hombre</option> 
+					   <option value="mujer">Mujer</option> 
+					   <option value="no_especificado">No especificado</option>					   
+					</select>					 
 					
 					<header class="titulo">País *</header>
-					<input type="text" name="pais" value="¿Donde vives?"> 
+					<input type="text" name="pais" placeholder="¿Donde vives?"> 
 					
 					<header class="titulo">Código Postal *</header>
-					<input type="text" name="cp" value="CP"> 
+					<input type="text" name="cp" placeholder="CP"> 
 					
 				<!-- Cierre Datos Personales -->
 				</section>	
@@ -81,15 +137,15 @@
 				<section class="form_container">					
 					
 					<header class="titulo">Nick *</header>
-					<input type="text" name="nick" value="Nick">
+					<input type="text" name="nick" placeholder="Nick">
 						
 					<header class="titulo">Password *</header>
 					<input type="password" name="contrasena">
 					<input type="password" name="contrasena_confirmar"> 
 						
 					<header class="titulo">E-Mail *</header>
-					<input type="text" name="email" value="E-Mail">
-					<input type="text" name="email_confirmar" value="Confirmar E-Mail">
+					<input type="text" name="email" placeholder="E-Mail">
+					<input type="text" name="email_confirmar" placeholder="Confirmar E-Mail">
 					
 				<!-- Cierre Datos Usuario -->
 				</section>	
@@ -99,16 +155,16 @@
 				<section class="form_container">
 										
 					<header class="titulo">Idioma *</header>
-					<input type="text" name="idioma" value="Principal idioma"> 
+					<input type="text" name="idioma" placeholder="Principal idioma"> 
 					
 					<header class="titulo">Profesión</header>
-					<input type="text" name="profesion" value="¿A qué te dedicas?"> 
+					<input type="text" name="profesion" placeholder="¿A qué te dedicas?"> 
 					
 					<header class="titulo">Aficiones</header>
-					<textarea name="aficiones" cols="50" rows="5">¿Cuales son tus aficiones?</textarea> 
+					<textarea name="aficiones" cols="50" rows="5" placeholder="¿Cuales son tus aficiones?"></textarea> 
 					
 					<header class="titulo">Disponibilidad *</header>
-					<input type="text" name="disponibilidad" value="horario en el que te conectas"> 
+					<input type="text" name="disponibilidad" placeholder="Horario en el que te conectas"> 
 										
 				<!-- Cierre Datos Interes -->
 				</section>	
@@ -129,31 +185,63 @@
 		<!-- Cierre Contenedor principal -->
 		</section>	
 		
-		<!-- Pie de la página -->
-		<footer>
+		<!-- Totalidad del pie -->
+		<footer>				
 			<!-- Contenedor del pie -->
-			<ul class="foot-container">
-				<li class="foot-item">					
-					<header class= "cabecera">Mapa</header>
-					<nav class= "list">Inicio</nav>
-					<nav class= "list">Avatar</nav>
-					<nav class= "list">Usuarios</nav>
-					<nav class= "list">Viajes</nav>					
-				</li>							
-								
-				<li class="foot-item">					
-					<header class= "cabecera">Idiomas</header>
-					<nav class= "list">Español</nav>
-					<nav class= "list">Inglés</nav>			
-				</li>
+			<div class="foot-container">
+			
+				<ul class="foot_links">
+					<!-- MAPA --> 
+					<li class="foot-item">					
+						<header class= "cabecera">Mapa</header>
+						<nav class= "list">Inicio</nav>
+						<nav class= "list">Avatar</nav>
+						<nav class= "list">Usuarios</nav>
+						<nav class= "list">Viajes</nav>					
+					</li>	
 
-				<li class="foot-item">					
-					<header class= "cabecera">Contacta</header>
-					<nav class= "list">659258023</nav>
-					<nav class= "list">yaketyyak@yaketyyak.com</nav>			
-				</li>
-			</ul>
-
+					<!-- INTERES --> 
+					<li class="foot-item">					
+						<header class= "cabecera">Interés</header>
+						<nav class= "list">Skype</nav>
+						<nav class= "list">Flickr</nav>
+						<nav class= "list">Tumblr</nav>								
+					</li>
+					
+					<!--  --> 
+					<li class="foot-item">					
+						<header class= "cabecera">Interés</header>
+						<nav class= "list">Skype</nav>
+						<nav class= "list">Flickr</nav>
+						<nav class= "list">Tumblr</nav>								
+					</li>
+					
+					<!--  --> 
+					<li class="foot-item">					
+						<header class= "cabecera">Interés</header>
+						<nav class= "list">Skype</nav>
+						<nav class= "list">Flickr</nav>
+						<nav class= "list">Tumblr</nav>								
+					</li>
+											
+					<!-- CONTACTA --> 
+					<li class="foot-item">					
+						<header class= "cabecera">Contacta</header>
+						<nav class= "list">659258023</nav>
+						<nav class= "list">yaketyyak@yaketyyak.com</nav>			
+					</li>
+				</ul>
+				
+				<ul class="foot_aside">				
+					<!-- Parte SOCIAL -->
+					<li>
+						<img src="img/icons/twitter.png"/>
+						<img src="img/icons/g+.png"/>						
+						<img src="img/icons/facebook.png"/>
+					</li>					
+				</ul>						
+			</div>
+			
 			<!-- foot movil -->
 			<nav class="foot-movil">
 				<img class="foot_img"src="img/icons/email.png"/>
@@ -161,9 +249,8 @@
 				<img class="foot_img"src="img/icons/g+.png"/>
 				<img class="foot_img"src="img/icons/twitter.png"/>
 			<!-- Cierre foot del movil -->		
-			</nav>				
-			
-		<!-- Cierre del Pie de la página -->	
-		</footer>	
+			</nav>
+		<!-- Cierre de del Pie -->	
+		</footer>
 	</body>	
 </html>

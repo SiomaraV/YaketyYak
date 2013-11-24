@@ -1,0 +1,61 @@
+/* contenedor del login */
+.login_container{
+	width:50%;
+	margin:0 auto;
+	margin-top:27.75%;
+	margin-bottom:27.75%;
+	padding:5%;
+	background-color:#5ba8a7;
+	-webkit-border-radius: 1%;	
+}
+
+/* delimitador de formulario */
+.form_container{
+	width:80%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+ul{
+	list-style:none;
+	padding:0;
+}
+
+/* inputs texto */
+.login_input{
+	width:99%;
+	height:30px;
+	margin:2% 0;
+	padding:2% 5%;
+	font-size:150%;
+	-webkit-border-radius:5%;
+}
+
+/* Recordarme texto */
+.titulo{
+	font-size:110%;
+	color:#cef6f5;
+	font-weight:bold;
+	margin:2% 2%;	
+}
+
+/* botones enviar: estado normal */
+.boton{
+	border:0px; /* Propiedad que se pone para no ver el borde del botón por defecto */	
+	font-weight:bold;
+	font-size:125%;
+	padding:1% 2%; 	
+	margin-top: 2%;
+	color:#5ba8a7;
+	background-color:#cef6f5;
+	-webkit-border-radius:5%;
+
+	float:right;
+}
+
+/* botones enviar: raton encima */
+.boton:hover{
+	border:0px; /* Propiedad que se pone para no ver el borde del botón por defecto */	
+	color:#7cc2c1;
+	background-color:#022928;
+}

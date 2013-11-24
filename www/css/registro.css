@@ -19,11 +19,12 @@
 }
 
 /* Campos del formulario */
-input, textarea{
+input, textarea, select{
 	color: #5ba8a7;
 	margin-bottom:1%;
 	padding:0.5%;
 }
+
 
 /* botones enviar y borrar: estado normal */
 .boton{
