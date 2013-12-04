@@ -52,29 +52,48 @@
 			
 				<!-- Datos personales -->
 				<section class="form_container">					
-					
-					<header class="titulo">Nombre *</header>
-					<input type="text" name="nombre" placeholder="Nombre">
-					<input type="text" name="apellido" placeholder="Apellido">
-					
-					<header class="titulo">Fecha de Nacimiento *</header>
-					<input type="text" name="dia" size="2" maxlength="2" placeholder="Dia"> 
-					<input type="text" name="mes" size="2" maxlength="2" placeholder="Mes">  
-					<input type="text" name="anyo" size="2" maxlength="4" placeholder="Año"> 
-					
-					<header class="titulo">Sexo</header>
-					<select name="sexo">
-					   <option value="hombre">Hombre</option> 
-					   <option value="mujer">Mujer</option> 
-					   <option value="no_especificado">No especificado</option>					   
-					</select>					 
-					
-					<header class="titulo">País *</header>
-					<input type="text" name="pais" placeholder="¿Donde vives?"> 
-					
-					<header class="titulo">Código Postal *</header>
-					<input type="text" name="cp" placeholder="CP"> 
-					
+					<table>
+						<tr>
+							<td>
+								<header class="titulo">Nombre *</header>
+								<input type="text" name="nombre" placeholder="Nombre">
+							</td>
+							<td>
+								<header class="titulo">Apellido *</header>
+								<input type="text" name="apellido" placeholder="Apellido">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<header class="titulo">Fecha de Nacimiento *</header>
+								<input type="text" name="dia" size="1" maxlength="2" placeholder="Dia"> 
+								<input type="text" name="mes" size="1" maxlength="2" placeholder="Mes">  
+								<input type="text" name="anyo" size="1" maxlength="4" placeholder="Año">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<header class="titulo">Sexo</header>
+								<select name="sexo">
+								   <option value="hombre">Hombre</option> 
+								   <option value="mujer">Mujer</option> 
+								   <option value="no_especificado">No especificado</option>					   
+								</select>		
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<header class="titulo">País *</header>
+								<input type="text" name="pais" placeholder="¿Donde vives?"> 		
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<header class="titulo">Código Postal *</header>
+								<input type="text" name="cp" placeholder="CP">		
+							</td>
+						</tr>
+					</table>
 				<!-- Cierre Datos Personales -->
 				</section>	
 			
@@ -84,14 +103,29 @@
 					
 					<header class="titulo">Nick *</header>
 					<input type="text" name="nick" placeholder="Nick">
-						
-					<header class="titulo">Password *</header>
-					<input type="password" name="contrasena">
-					<input type="password" name="contrasena_confirmar"> 
-						
-					<header class="titulo">E-Mail *</header>
-					<input type="text" name="email" placeholder="E-Mail">
-					<input type="text" name="email_confirmar" placeholder="Confirmar E-Mail">
+					
+					<table>
+						<tr>
+							<td>
+								<header class="titulo">Password *</header>
+								<input type="password" name="contrasena">
+							</td>
+							<td>
+								<header class="titulo">Confirmar Password *</header>
+								<input type="password" name="contrasena_confirmar"> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<header class="titulo">E-Mail *</header>
+								<input type="text" name="email" placeholder="E-Mail">
+							</td>
+							<td>
+								<header class="titulo">Confirmar E-Mail *</header>
+								<input type="text" name="email_confirmar" placeholder="Confirmar E-Mail">
+							</td>
+						</tr>
+					</table>
 					
 				<!-- Cierre Datos Usuario -->
 				</section>	
