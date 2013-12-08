@@ -95,6 +95,12 @@
 >> obligado a buscar por su cuenta una alternativa, cosa que no nos interesa. 
 
 
+## DIRECCIONES IMPORTANTES 
+
+> **GitHub:** https://github.com/inmagination/YaketyYak
+
+> **OpenShift:** http://yakettyyak-inmareyes.rhcloud.com/
+
 
 
 
