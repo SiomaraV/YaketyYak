@@ -26,7 +26,7 @@
 				<nav class="logo_container"><span class="logo"><a href="index.html">YakettyYak</a></span></nav>				
 
 				<!-- Navegador -->	
-				<nav class="login-item"><a href="login.html">Entra</a></nav>
+				<nav class="login-item"><a href="login.php">Entra</a></nav>
 			 	<nav class="login-item reg"><a href="registro.html">Registrar</a></nav>
 			  	<nav class="lan-item">ES</nav>
 			<!-- Cierre Contenedor del menu -->		
@@ -48,23 +48,52 @@
 
 			<!-- Datos login -->
 			<section class="login_container">
-		
-				<!-- Inicio de formulario -->
-				<form method="post" action="login.php">			
-					<section class="form_container">
-						<ul>							
-							<li><input class="login_input" type="text" name="email" placeholder="Introduce tu email"></li>
-							<li><input class="login_input" type="pass" name="password" placeholder="Introduce tu password"></li>
-							<li>
-								<input type = "checkbox" name="recordar"/><span class="titulo">Recordarme</span>							
-								<input class="boton" type="submit" value="Enviar">
-							</li>						
-						</ul>
-					</section>				
-				
-				<!-- Cierre de formulario -->
-				</form>
+				<?php
+					if(empty($_REQUEST['elogin']) or empty($_REQUEST['plogin'])){
+						print  "<form method='post' action='login.php'>			
+									<section class='form_container'>
+										<ul>							
+											<li><input class='login_input' type='text' name='elogin' placeholder='Introduce tu email'></li>
+											<li><input class='login_input' type='password' name='plogin' placeholder='Introduce tu password'></li>
+											<li>
+												<input type = 'checkbox' name='recordar'/><span class='titulo'>Recordarme</span>							
+												<input class='boton' type='submit' value='Enviar'>
+											</li>						
+										</ul>
+									</section>	
+								</form>";
+					}else{
+						// Recuperamos valores introducidos en el login 
+						$email_login = $_REQUEST['elogin'];
+						$pass_login = $_REQUEST['plogin'];
 
+						//Recuperamos valores de la bbdd, devuelva muchos valores asi que tengo que coger solo el del email y password
+						//Como a la hora de escribir el fichero tenemos que poner \r\n tiene una longitus mayor compuesta por blancos, asi que los borramos con trim
+						$bbdd = file('fichero.txt');
+						$email_bbdd = trim($bbdd[9]); 
+						$pass_bbdd = trim($bbdd[7]);
+				
+						//si el login esta bien nos vamos a perfil.php
+						if(($email_login == $email_bbdd) and ($pass_login == $pass_bbdd)){
+    						header("Location:perfil.php");
+    					//sino muestra el formulario con mensaje error en rojo
+						}else {
+   							print  "<form method='post' action='login.php'>			
+									<section class='form_container'>
+										<ul>							
+											<li><input class='login_input' type='text' name='elogin' placeholder='Introduce tu email'></li>
+											<li><input class='login_input' type='password' name='plogin' placeholder='Introduce tu password'></li>
+											<li class='login_error'>Email o Password Incorrectos</li>
+											<li>
+												<input type = 'checkbox' name='recordar'/><span class='titulo'>Recordarme</span>							
+												<input class='boton' type='submit' value='Enviar'>
+											</li>						
+										</ul>
+									</section>	
+								</form>";
+						}
+					}						
+				?>
 			<!-- Cierre Datos login -->	
 			</section>	
 			
@@ -121,9 +150,9 @@
 				<ul class="foot_aside">				
 					<!-- Parte SOCIAL -->
 					<li>
-						<img src="img/icons/twitter.png"/>
-						<img src="img/icons/g+.png"/>						
-						<img src="img/icons/facebook.png"/>
+						<img src="img/icons/twitter_on.png" onmouseover="this.src='img/icons/twitter.png';" onmouseout="this.src='img/icons/twitter_on.png';"/>
+						<img src="img/icons/g+_on.png" onmouseover="this.src='img/icons/g+.png';" onmouseout="this.src='img/icons/g+_on.png';"/>						
+						<img src="img/icons/facebook_on.png" onmouseover="this.src='img/icons/facebook.png';" onmouseout="this.src='img/icons/facebook_on.png';"/>
 					</li>					
 				</ul>						
 			</div>
