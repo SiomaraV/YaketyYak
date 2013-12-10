@@ -70,7 +70,7 @@
 						//Recuperamos valores de la bbdd, devuelva muchos valores asi que tengo que coger solo el del email y password
 						//Como a la hora de escribir el fichero tenemos que poner \r\n tiene una longitus mayor compuesta por blancos, asi que los borramos con trim
 						$bbdd = file('fichero.txt');
-						$email_bbdd = trim($bbdd[9]); 
+						$email_bbdd = trim($bbdd[8]); 
 						$pass_bbdd = trim($bbdd[7]);
 				
 						//si el login esta bien nos vamos a perfil.php
@@ -79,18 +79,18 @@
     					//sino muestra el formulario con mensaje error en rojo
 						}else {
    							print  "<form method='post' action='login.php'>			
-									<section class='form_container'>
-										<ul>							
-											<li><input class='login_input' type='text' name='elogin' placeholder='Introduce tu email'></li>
-											<li><input class='login_input' type='password' name='plogin' placeholder='Introduce tu password'></li>
-											<li class='login_error'>Email o Password Incorrectos</li>
-											<li>
-												<input type = 'checkbox' name='recordar'/><span class='titulo'>Recordarme</span>							
-												<input class='boton' type='submit' value='Enviar'>
-											</li>						
-										</ul>
-									</section>	
-								</form>";
+										<section class='form_container'>
+											<ul>							
+												<li><input class='login_input' type='text' name='elogin' placeholder='Introduce tu email'></li>
+												<li><input class='login_input' type='password' name='plogin' placeholder='Introduce tu password'></li>
+												<li class='login_error'>Email o Password Incorrectos</li>
+												<li>
+													<input type = 'checkbox' name='recordar'/><span class='titulo'>Recordarme</span>							
+													<input class='boton' type='submit' value='Enviar'>
+												</li>						
+											</ul>
+										</section>	
+									</form>";
 						}
 					}						
 				?>
@@ -112,7 +112,8 @@
 						<nav class= "list">Inicio</nav>
 						<nav class= "list">Avatar</nav>
 						<nav class= "list">Usuarios</nav>
-						<nav class= "list">Viajes</nav>					
+						<nav class= "list">Viajes</nav>
+						<nav class= "list">Galerias</nav>						
 					</li>	
 
 					<!-- INTERES --> 

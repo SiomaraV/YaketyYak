@@ -66,6 +66,12 @@ ul{
 	background-color:#022928;
 }
 
+input, textarea, select{
+	color: #5ba8a7;
+	margin-bottom:1%;
+	padding:0.5%;
+}
+
 
 
 @media (max-width: 1600px){

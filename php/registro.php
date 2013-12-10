@@ -54,9 +54,7 @@
 	//introducimos datos cuenta
 	fwrite($fichero, "$nick \r\n");
 	fwrite($fichero, "$contrasena \r\n");
-	fwrite($fichero, "$contrasena_confirmar \r\n");
 	fwrite($fichero, "$email \r\n");
-	fwrite($fichero, "$email_confirmar \r\n");
 
 	//introducimos datos adicionales
 	fwrite($fichero, "$idioma \r\n");
