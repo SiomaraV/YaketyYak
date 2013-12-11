@@ -52,7 +52,7 @@ function validar(){
      var cpRegex=/^\d{5}$/;  //cifra numerica de princio a fin en la que abra 5 ocurrencias 
      var contrasRegex=/^\w{5,10}$/; //entre ocho y dies caracteres y digito. 
      var mailRegex=/[\w-\.]{3,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
-     alert("e entrado a validar"); 
+      
  //creo un array para los elementos que estan con informacion invalida
      var info=[]; 
 
@@ -179,7 +179,7 @@ function validar(){
             
  //validar contraseñas
        if((!contras1valor.match(contrasRegex)) || (contras1valor !== contras2valor)){
-                 alert("e entrado a validar contraseña");
+      
                  info.push(contras1);
                  info.push(contras2);
                  mPas.innerHTML="<font color='red'><h6 color='red'>Contraseña incorrecta,5 a 10 caracteres alfanumericos</h6></font>";
@@ -187,7 +187,7 @@ function validar(){
        
  //validar emails
         if((!mail1valor.match(mailRegex)) || (mail1valor !== mail2valor)){
-            alert("a entrado en validar mail");
+      
             info.push(mail1);
             info.push(mail2);
             mEm.innerHTML="<font color='red'><h6 color='red'>Incorrecto vuelva a intentarlo</h6></font>";
@@ -195,7 +195,7 @@ function validar(){
     
  //validar disponible...controlo que no este vacio
          if(!dispvalor.length > 0){
-             alert("e estrado a validar disponibilidad");
+      
              info.push(disp);
              mD.innerHTML="<font color='red'><h6 color='red'>Porfavor introduzca su disponibilidad</h6></font>";
          }
@@ -203,7 +203,7 @@ function validar(){
     
     
  //si el array contiene algo ,lo recorro y pinto las cajas
-            alert(info.length);
+      
             if(info.length > 0){
                 for(x=0;x < info.length;x++){
                      if(x===0){
