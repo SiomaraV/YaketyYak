@@ -62,8 +62,14 @@
 
 		<!-- RECUPERACION DE DATOS DE FORMULARIO DE REGISTRO -->
 		<?php
-			//Cogemos el contenido de fichero.txt y lo calmacenamos en un array
+			//Cogemos el contenido de fichero.txt y lo almacenamos en un array
 			$user_info = file('fichero.txt');
+
+			//cogemos los datos de la fecha por separado para poder modificarlos
+			$user_dia = substr($user_info[2], 0, 2);
+			$user_mes = substr($user_info[2], 3, 2);
+			$user_anyo = substr($user_info[2], 6, 4);
+
 			//para saber el indice de la variable que queremos recuperar
 			//var_dump($user_info);
 		?>
@@ -138,23 +144,23 @@
 							<tr>
 								<!-- cambiar nombre -->
 								<td><span class="datos">Nuevo nombre: </span></td>
-								<td><input type="text" name="newname"></td>
+								<td><input type="text" name="newname" value="<?php $user_info[0];?>" placeholder="<?php echo $user_info[0];?>"></td>
 							</tr>
 							<tr>
 								<!-- cambiar apellidos -->
 								<td><span class="datos">Nuevo/s apellido/s: </span></td>
-								<td><input type="text" name="newapellido"></td>
+								<td><input type="text" name="newapellido" placeholder="<?php echo $user_info[1];?>"></td>
 							</tr>
 							<tr>
 								<!-- cambiar fecha nacimiento -->
 								<td><span class="datos">Nueva fecha nacimiento: </span></td>
-								<td><input type="text" name="newdia" size="1" maxlength="2"> /
-								<input type="text" name="newmes" size="1" maxlength="2"> /
-								<input type="text" name="newanyo" size="1" maxlength="4"></td>
+								<td><input type="text" name="newdia" size="1" maxlength="2" placeholder="<?php echo $user_dia;?>"> /
+								<input type="text" name="newmes" size="1" maxlength="2" placeholder="<?php echo $user_mes;?>"> /
+								<input type="text" name="newanyo" size="1" maxlength="4" placeholder="<?php echo $user_anyo;?>"></td>
 							</tr>
 							<tr>
 								<!-- cambiar sexo -->
-								<td><span class="datos">Nueva sexo: </span></td>
+								<td><span class="datos">Nuevo sexo: </span></td>
 								<td><select name="newsexo">
 									<option value="hombre">Hombre</option> 
 									<option value="mujer">Mujer</option> 
@@ -164,18 +170,18 @@
 							<tr>	
 								<!-- cambiar pais -->
 								<td><span class="datos">Nuevo país: </span></td>
-								<td><input type="text" name="newpais"></td>
+								<td><input type="text" name="newpais" placeholder="<?php echo $user_info[4];?>"></td>
 							</tr>
 							<tr>
 								<!-- cambiar cp -->
 								<td><span class="datos">Nuevo cp: </span></td>
-								<td><input type="text" name="newcp"></td>
+								<td><input type="text" name="newcp" placeholder="<?php echo $user_info[5];?>"></td>
 							</tr>
 						</table>						
 
-						<!-- Botones reset y enviar -->
-						<input id="modpersonales_button" type="submit" value="Guardar" class="boton">
-						<input type="reset" value="Borrar" class="boton">
+						<!-- Botones cerrar y enviar -->
+						<input id="personales_close" type="button" value="Cerrar" class="boton">
+						<input id="modpersonales_button" type="submit" value="Guardar" class="boton">						
 					</form>
 				<!-- cierre de Datos personales MOD -->
 				</section>
@@ -213,9 +219,9 @@
 						<span class="datos">Confirmar Nuevo email principal: </span>
 						<input type="text" name="newmail_conf"></br>											
 
-						<!-- Botones reset y enviar -->
+						<!-- Botones cerrar y enviar -->
+						<input id="cuenta_close" type="button" value="Cerrar" class="boton">
 						<input id="modcuenta_button" type="submit" value="Guardar" class="boton">
-						<input type="reset" value="Borrar" class="boton">
 					</form>
 				<!-- cierre de Datos cuenta MOD -->
 				</section>
@@ -249,31 +255,35 @@
 							<tr>
 								<!-- cambiar idioma -->
 								<td><span class="datos">Nuevo idioma: </span></td>
-								<td><input type="text" name="newidioma"></td>
+								<td><select name="newidioma">
+        		   					<option value="Español">Español</option> 
+			   						<option value="Inglés">Inglés</option> 
+			   						<option value="Otro">Otro</option>					   
+								</select></td>				
 							</tr>
 
 							<tr>
 								<!-- cambiar Profesión -->
 								<td><span class="datos">Nueva profesión: </span></td>
-								<td><input type="text" name="newprofesión"></td>
+								<td><input type="text" name="newprofesión" placeholder="<?php echo $user_info[10];?>"></td>
 							</tr>
 
 							<tr>
 								<!-- cambiar Aficiones -->
 								<td><span class="datos">Nuevas aficiones: </span></td>
-								<td><textarea name="newaficiones" cols="50" rows="5"></textarea></td>
+								<td><textarea name="newaficiones" cols="50" rows="5" placeholder="<?php echo $user_info[11];?>"></textarea></td>
 							</tr>
 
 							<tr>
 								<!-- cambiar Disponibilidad -->
 								<td><span class="datos">Nueva disponibilidad: </span></td>
-								<td><input type="text" name="newdisponibilidad"></td>											
+								<td><input type="text" name="newdisponibilidad" placeholder="<?php echo $user_info[12];?>"></td>											
 							</tr>
 						</table>
 
 						<!-- Botones reset y enviar -->
+						<input id="adicionales_close" type="button" value="Cerrar" class="boton">
 						<input id="modadicionales_button" type="submit" value="Guardar" class="boton">
-						<input type="reset" value="Borrar" class="boton">
 					</form>
 				<!-- cierre de Datos adicionales MOD -->
 				</section>
@@ -321,8 +331,8 @@
 						<input type="password" name="newpass_conf"> <br>
 
 						<!-- Botones reset y enviar -->
+						<input id="pass_close" type="button" value="Cerrar" class="boton">
 						<input id="modpass_button" type="submit" value="Guardar" class="boton">
-						<input type="reset" value="Borrar" class="boton">
 					</form>
 				<!-- cierre de password MOD -->
 				</section>
@@ -362,8 +372,8 @@
 						<input type="text" name="esecond_conf"> <br>
 						
 						<!-- Botones reset y enviar -->
+						<input id="email_close" type="button" value="Cerrar" class="boton">
 						<input id="addEmail_mod" type="submit" value="Guardar" class="boton">
-						<input type="reset" value="Borrar" class="boton">
 					</form>					
 				<!-- Añadir email secundario MOD -->
 				</section>

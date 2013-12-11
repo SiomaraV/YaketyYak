@@ -12,6 +12,11 @@ window.onload = function() {
         document.getElementById('personales_mod').style.display = 'none';
     };
 
+    document.getElementById('personales_close').onclick = function() {
+        document.getElementById('personales_view').style.display = '';
+        document.getElementById('personales_mod').style.display = 'none';
+    };
+
 
     ////////////////////////////// DATOS CUENTA //////////////////////////////
 
@@ -21,6 +26,11 @@ window.onload = function() {
     };
 
     document.getElementById('modcuenta_button').onclick = function() {
+        document.getElementById('cuenta_view').style.display = '';
+        document.getElementById('cuenta_mod').style.display = 'none';
+    };
+
+    document.getElementById('cuenta_close').onclick = function() {
         document.getElementById('cuenta_view').style.display = '';
         document.getElementById('cuenta_mod').style.display = 'none';
     };
@@ -38,6 +48,11 @@ window.onload = function() {
         document.getElementById('adicionales_mod').style.display = 'none';
     };
 
+    document.getElementById('adicionales_close').onclick = function() {
+        document.getElementById('adicionales_view').style.display = '';
+        document.getElementById('adicionales_mod').style.display = 'none';
+    };
+
 
 	////////////////////////////// PASSWORD //////////////////////////////
 
@@ -51,6 +66,11 @@ window.onload = function() {
         document.getElementById('pass_mod').style.display = 'none';
     };
 
+    document.getElementById('pass_close').onclick = function() {
+        document.getElementById('pass_view').style.display = '';
+        document.getElementById('pass_mod').style.display = 'none';
+    };
+
 
 	////////////////////////////// EMAIL SECUNDARIO //////////////////////////////
 
@@ -60,6 +80,11 @@ window.onload = function() {
     };
 
     document.getElementById('addEmail_mod').onclick = function() {
+        document.getElementById('addEmail_cont').style.display = '';
+        document.getElementById('addEmail_contmod').style.display = 'none';
+    };
+
+    document.getElementById('email_close').onclick = function() {
         document.getElementById('addEmail_cont').style.display = '';
         document.getElementById('addEmail_contmod').style.display = 'none';
     };
