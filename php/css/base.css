@@ -30,11 +30,11 @@ a{
 }
 
 a:link{
-	color:#165c5b;
+	color: #165c5b;
 }
 
 a:hover{
-	color:#a2dbda;
+	color: #a2dbda;
 }
 
 /* Estilo del body */
@@ -66,26 +66,9 @@ body{
   	justify-content: flex-end; 
 }
 
-.default{
-	
-}
-
-.logueado{
-	display:none;
-}
-
 /* Contenedor de la parte del logo del menu */
 .logo_container{
 	width:90%;
-	
-	display: flex;
-	display: -webkit-flex;
-  	flex-flow: row;
-	-webkit-flex-flow: row;
- 	 -webkit-align-items: center; 
-  	align-items: center;  	
-	-webkit-justify-content: flex-start; 
-  	justify-content: flex-start;
 }
 
 /* Logo letras */
@@ -110,6 +93,7 @@ span.logo{
 .login-item{
 	max-width:23%;
 	padding:0.5% 2%;
+	padding-right: 3%;
 	color:#165c5b;
 	background-color:#a2dbda;
 }
@@ -164,13 +148,42 @@ span.logo{
     flex-flow: row;
 }
 
-/* Imagen de la introduccion */	
-.intro_img{
-	max-width:100%;
-	-webkit-border-radius:1%;
-	/* border:1px solid 165c5b;	*/
+/* slide */
+/* contenedor slide */
+.rslides {
+  	position: relative;
+  	list-style: none;
+  	overflow: hidden;
+  	width: 100%;
+  	padding: 0;
+  	margin: 0;
 }
 
+/* li del slide*/
+.rslides li {
+  	-webkit-backface-visibility: hidden;
+  	position: absolute;
+  	display: none;
+  	width: 100%;
+ 	left: 0;
+  	top: 0;
+}
+
+/* primer li del slide */
+.rslides li:first-child {
+  	position: relative;
+  	display: block;
+  	float: left;
+}
+
+/* imagenes del slide */
+.rslides img {
+	-webkit-border-radius:1%;
+  	display: block;
+  	float: left;
+  	width: 100%;
+  	border: 0;
+}
 
 /* Contenedor de la introduccion */	
 .options-container {
@@ -189,11 +202,10 @@ span.logo{
 	text-align:center;
 	-webkit-border-radius:2%;
 	background: -webkit-linear-gradient(#5ba8a7,#165c5b);
-	/* border:1 solid 022928; */
 }
 
 .flex-item:hover{
-	-webkit-box-shadow: 0 0 10px #022928;
+	-webkit-box-shadow: 0 0 10px #165c5b;
 }
 
 /* Imagenes de opciones de la pagina */	
@@ -201,7 +213,6 @@ span.logo{
 	width:99%;
 	margin-bottom:6%;
 	-webkit-border-radius: 4%;
-	/* border:1px solid 022928; */
 }
 
 /* Titulos de opciones de la pagina */	
@@ -212,7 +223,7 @@ span.logo{
 }
 
 .list{
-	font-size:82.5%;
+	font-size:80%;
 }
 
 /* --------- PIE ---------  */
@@ -289,17 +300,15 @@ footer{
 /* imagenes sociales */
 .foot_aside img{
 	width:18%;
-	margin-left:3%;
+	margin-left:5%;
 	float:right;
 }
+
 
 /* pie movil */
 .foot-movil{
 	display: none;
 }
-
-
-
 
 
 
@@ -414,6 +423,18 @@ footer{
 
 	.f1{
 		min-width: 30%;	
+	}
+
+	.titulo{
+		font-size: 80%;
+	}
+
+	.foot-item{
+		margin-right: 6%;
+	}
+
+	.foot-item:first-child{
+		margin-right: 3%;
 	}
 }
 

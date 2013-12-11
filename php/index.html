@@ -12,6 +12,32 @@
 		
 		<!-- Caracteres especiales -->
 		<meta charset="utf-8" />
+
+		<!-- Enlace jquery para slide -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<!-- Enlace archivo js para slide -->
+		<script src="js/responsive_slide.js"></script>
+		<!-- Codigo js para slide-->
+		<script>
+		    $(window).load(function() {
+		      	$(".rslides").responsiveSlides({
+		        	maxwidth: 1000,
+		        	speed: 800
+		      	});
+		    });
+		</script>
+
+		<style>
+			/* menu sin loguear */
+			.default{
+				
+			}
+
+			/* menu logueado */
+			.logueado{
+				display:none;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -24,7 +50,7 @@
 				<nav class="logo_container"><span class="logo"><a class="logo_link" href="index.html">YakettyYak</a></span></nav>				
 
 				<!-- Navegador -->	
-				<nav class="login-item"><a href="login.html">Entra</a></nav>
+				<nav class="login-item"><a href="login.php">Entra</a></nav>
 			 	<nav class="login-item reg"><a href="registro.html">Registrar</a></nav>
 			  	<nav class="lan-item">ES</nav>
 			<!-- Cierre Contenedor del menu -->		
@@ -58,32 +84,38 @@
 		<section class="container">
 			
 			<!-- Imagenes introductorias de la pagina -->
-			<section class="intro_container">				
-				<img class="intro_img" src="img/intro.jpg" />
+			<section class="intro_container">
+				<!-- Slide -->				
+				<ul class="rslides">
+					<li><img src="img/slide/intro.jpg" alt=""></li>
+				  	<li><img src="img/slide/profile.jpg" alt=""></li>
+				  	<li><img src="img/slide/friends.jpg" alt=""></li>
+				  	<li><img src="img/slide/travelling.jpg" alt=""></li>
+				</ul>
 			</section>			
 			
 			<!-- Contenedores de opciones -->
 			<section class="options-container">
 				<article class="flex-item">					
-					<img class="options" src="img/new.jpg">								
+					<img class="options" src="img/options_index/new.jpg">								
 					<header class="titulo">CREA UN PERFIL</header>
 					<aside>Crea tu perfil personal y entra en la comunidad</aside>						
 				</article>
 					  
 				<article class="flex-item">
-					<img class="options" src="img/map.jpg">							
+					<img class="options" src="img/options_index/map.jpg">							
 					<header class="titulo">ELIGE UN PAÍS</header>
 					<aside>Elige el país donde quieres conocer gente</aside>		
 				</article>
 					
 				<article class="flex-item">
-					<img class="options" src="img/talk.jpg">							
+					<img class="options" src="img/options_index/talk.jpg">							
 					<header class="titulo">HABLA CON GENTE</header>
 					<aside>Manten una conversación con quien y cómo quieras</aside>		
 				</article>
 					
 				<article class="flex-item">
-					<img class="options" src="img/travel.jpg">							
+					<img class="options" src="img/options_index/travel.jpg">							
 					<header class="titulo">PLANIFICA TU VIAJE</header>
 					<aside>Planifica y personaliza el viaje a tu próximo destino </aside>		
 				</article>
@@ -104,7 +136,8 @@
 						<nav class= "list">Inicio</nav>
 						<nav class= "list">Avatar</nav>
 						<nav class= "list">Usuarios</nav>
-						<nav class= "list">Viajes</nav>					
+						<nav class= "list">Viajes</nav>	
+						<nav class= "list">Galerias</nav>				
 					</li>	
 
 					<!-- INTERES --> 
@@ -142,16 +175,16 @@
 				<ul class="foot_aside">				
 					<!-- Parte SOCIAL -->
 					<li>
-						<img src="img/icons/twitter.png"/>
-						<img src="img/icons/g+.png"/>						
-						<img src="img/icons/facebook.png"/>
+						<img src="img/icons/twitter_on.png" onmouseover="this.src='img/icons/twitter.png';" onmouseout="this.src='img/icons/twitter_on.png';"/>
+						<img src="img/icons/g+_on.png" onmouseover="this.src='img/icons/g+.png';" onmouseout="this.src='img/icons/g+_on.png';"/>						
+						<img src="img/icons/facebook_on.png" onmouseover="this.src='img/icons/facebook.png';" onmouseout="this.src='img/icons/facebook_on.png';"/>
 					</li>					
 				</ul>						
 			</div>
 			
 			<!-- foot movil -->
 			<nav class="foot-movil">
-				<img class="foot_img"src="img/icons/email.png"/>
+				<img class="foot_img" src="img/icons/email.png"/>
 				<img class="foot_img"src="img/icons/facebook.png"/>
 				<img class="foot_img"src="img/icons/g+.png"/>
 				<img class="foot_img"src="img/icons/twitter.png"/>

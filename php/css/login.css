@@ -39,6 +39,12 @@ ul{
 	margin:2% 2%;	
 }
 
+/* mensaje de error en login */
+.login_error{
+	font-size:110%;
+	color:red;
+}
+
 /* botones enviar: estado normal */
 .boton{
 	border:0px; /* Propiedad que se pone para no ver el borde del botón por defecto */	
@@ -58,4 +64,19 @@ ul{
 	border:0px; /* Propiedad que se pone para no ver el borde del botón por defecto */	
 	color:#7cc2c1;
 	background-color:#022928;
+}
+
+input, textarea, select{
+	color: #5ba8a7;
+	margin-bottom:1%;
+	padding:0.5%;
+}
+
+
+
+@media (max-width: 1600px){
+	.login_container{
+		margin-top:24.75%;
+		margin-bottom:24.75%;
+	}
 }
