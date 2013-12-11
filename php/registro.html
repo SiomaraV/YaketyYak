@@ -1,232 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<!-- Título de la página -->
-		<title>Registro</title>
+   <head>
+<!-- Título de la página -->
+     <title> Registro </title>
+<!-- Hoja de estilos general -->
+     <link rel="stylesheet" type="text/css" href="css/base.css"/>	
+     <!-- Hoja estilos registro -->
+     <link rel="stylesheet" type="text/css" href="css/registro.css"/>
 		
-		<!-- Hoja de estilos general -->
-		<link rel="stylesheet" type="text/css" href="css/base.css"/>	
-		<!-- Hoja estilos registro -->
-		<link rel="stylesheet" type="text/css" href="css/registro.css"/>
+<!-- Favicon -->
+     <link rel="shortcut icon" href="img/favicon.ico">	
 		
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico">
-		
-		<!-- Caracteres especiales -->
-		<meta charset="utf-8" />
-
-	</head>
+<!-- Caracteres especiales -->
+     <meta charset="utf-8" />
+     <script type="text/javascript" src="js/validarRegistro.js"></script>
+ 
+</head>
 	
-	<body>
-		<!-- Totalidad del menu -->
-		<header class="menu">	
+   <body>
+           
+       
+<!-- Totalidad del menu -->
+      <header class="menu">	
 			
-			<!-- Contenedor del menu por defecto -->
-			<header class="menu-container default">
-				<!-- Imagen del logo -->
-				<nav class="logo_container"><span class="logo"><a href="index.html">YakettyYak</a></span></nav>				
+<!-- Contenedor del menu por defecto -->
+      <header class="menu-container default">
+          <!-- Imagen del logo -->
+          <nav class="logo_container"><span class="logo"><a href="index.html">YakettyYak</a></span></nav>				
 
-				<!-- Navegador -->	
-				<nav class="login-item"><a href="login.html">Entra</a></nav>
-			 	<nav class="login-item reg"><a href="registro.html">Registrar</a></nav>
-			  	<nav class="lan-item">ES</nav>
-			<!-- Cierre Contenedor del menu -->		
-			</header>				
+<!-- Navegador -->	
+          <nav class="login-item"><a href="login.html">Entra</a></nav>
+		 	<nav class="login-item reg"><a href="registro.html">Registrar</a></nav>
+		  	<nav class="lan-item">ES</nav>
+          <!-- Cierre Contenedor del menu -->		
+     </header>
+      
+<!-- menu movil -->
+	<nav class="menu-movil">
+		<img class="img_movil" src="img/icons/home.png"/>
+		<img class="img_movil" src="img/icons/search.png"/>
+		<img class="img_movil" src="img/icons/user.png"/>
+<!-- Cierre menu del movil -->		
+	</nav>	
 
-			<!-- menu movil -->
-			<nav class="menu-movil">
-				<img class="img_movil"src="img/icons/home.png"/>
-				<img class="img_movil"src="img/icons/search.png"/>
-				<img class="img_movil"src="img/icons/user.png"/>
-			<!-- Cierre menu del movil -->		
-			</nav>	
-
-		<!-- Cierre de Totalidad del menu -->	
-		</header>
+<!-- Cierre de Totalidad del menu -->	
+	</header>
 		
-		<!-- Contenedor principal -->
-		<section class="container">
+<!-- Contenedor principal -->
+          <section class="container">
+	
+<!-- Inicio de formulario -->
+<form action="registrar.php" method="post" onsubmit="return validar()"> 
+                             
+<!-- Datos personales -->
+        	<section class="form_container">					
+		<table>
+	        	<tr>
+				<td>
+                                     <header class="titulo">Nombre *</header>
+                                     <input type="text" name="nombre" id="nombre" placeholder="Nombre" onclick="style.borderColor=''; invisible('nombre')">
+                                     </br><span id="mNombre"></span>
+                       		</td>
+				<td>
+                                    
+                                    <header class="titulo">Apellido *</header>
+                                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" onclick="style.borderColor=''; invisible('apellido')">
+                                    </br><span id="mApellido"></span>
+			        </td>
+			</tr>
+			<tr>
+				<td>
+		          	     <header class="titulo">Fecha de Nacimiento *</header>
+				     <input type="text" name="dia" id="dia" size="2" maxlength="2" placeholder="Dia" onclick="style.borderColor=''; invisible('dia')"> 
+			             <input type="text" name="mes" id="mes" size="2" maxlength="2" placeholder="Mes" onclick="style.borderColor='';invisible('mes')">  
+				     <input type="text" name="anyo" id="anyo" size="4" maxlength="4" placeholder="Año" onclick="style.borderColor='';invisible('anyo')">
+                                     </br><span id="mFecha"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				     <header class="titulo">Sexo</header>
+				     <select name="sexo">
+					   <option value="hombre">Hombre</option> 
+					   <option value="mujer">Mujer</option> 
+					   <option value="no_especificado">No especificado</option>					   
+			             </select>		
+				</td>
+			</tr>
+			<tr>
+				<td>
+                    			<header class="titulo">País *</header>
+					<input type="text" name="pais" id="pais" placeholder="¿Donde vives?" onclick="style.borderColor='';invisible('pais')"> 
+                                        </br><span id="mPais"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<header class="titulo">Código Postal *</header>
+					<input type="text" name="cp" id="cp" placeholder="CP" onclick="style.borderColor='';invisible('cp')">	
+                                        </br><span id="mCodigo"></span>
+				</td>
+			</tr>
+		</table>
+	<!-- Cierre Datos Personales -->
+        </section>	
 		
-			<!-- Inicio de formulario -->
-			<form method="post" action="registro.php">
 			
-				<!-- Datos personales -->
-				<section class="form_container">					
-					<table>
-						<tr>
-							<td>
-								<header class="titulo">Nombre *</header>
-								<input type="text" name="nombre" placeholder="Nombre">
-							</td>
-							<td>
-								<header class="titulo">Apellido *</header>
-								<input type="text" name="apellido" placeholder="Apellido">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<header class="titulo">Fecha de Nacimiento *</header>
-								<input type="text" name="dia" size="1" maxlength="2" placeholder="Dia"> 
-								<input type="text" name="mes" size="1" maxlength="2" placeholder="Mes">  
-								<input type="text" name="anyo" size="1" maxlength="4" placeholder="Año">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<header class="titulo">Sexo</header>
-								<select name="sexo">
-								   <option value="hombre">Hombre</option> 
-								   <option value="mujer">Mujer</option> 
-								   <option value="no_especificado">No especificado</option>					   
-								</select>		
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<header class="titulo">País *</header>
-								<input type="text" name="pais" placeholder="¿Donde vives?"> 		
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<header class="titulo">Código Postal *</header>
-								<input type="text" name="cp" placeholder="CP">		
-							</td>
-						</tr>
-					</table>
-				<!-- Cierre Datos Personales -->
-				</section>	
-			
-			
-				<!-- Datos Usuario -->
-				<section class="form_container">					
+	<!-- Datos Usuario -->
+	<section class="form_container">					
 					
-					<header class="titulo">Nick *</header>
-					<input type="text" name="nick" placeholder="Nick">
+		<header class="titulo">Nick *</header>
+		<input type="text" name="nick" id="nick" placeholder="Nick" onclick="style.borderColor='';invisible('nombre')" >
+		</br><span id="mNick"></span>	
+		<table>
+			<tr>
+                		<td>
+					<header class="titulo">Password *</header>
+					<input type="password" name="contrasena" id="contrasena1" onclick="style.borderColor='';invisible('contrasena1')">
+                                        </br><span id="mPassword"></span>
+				</td>
+				<td>
+					<header class="titulo">Confirmar Password *</header>
+					<input type="password" name="contrasena_confirmar" id="contrasena2" onclick="style.borderColor=''" >
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<header class="titulo">E-Mail *</header>
+					<input type="text" name="email" id="email1" placeholder="E-Mail" onclick="style.borderColor=''; invisible('email1')">
+                                        </br><span id="mEmail"></span>
+				</td>
+				<td>
+					<header class="titulo">Confirmar E-Mail *</header>
+                        		<input type="text" name="email_confirmar" id="email2" placeholder="Confirmar E-Mail" onclick="style.borderColor=''">
+				</td>
+			</tr>
+	</table>
 					
-					<table>
-						<tr>
-							<td>
-								<header class="titulo">Password *</header>
-								<input type="password" name="contrasena">
-							</td>
-							<td>
-								<header class="titulo">Confirmar Password *</header>
-								<input type="password" name="contrasena_confirmar"> 
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<header class="titulo">E-Mail *</header>
-								<input type="text" name="email" placeholder="E-Mail">
-							</td>
-							<td>
-								<header class="titulo">Confirmar E-Mail *</header>
-								<input type="text" name="email_confirmar" placeholder="Confirmar E-Mail">
-							</td>
-						</tr>
-					</table>
-					
-				<!-- Cierre Datos Usuario -->
-				</section>	
+	<!-- Cierre Datos Usuario -->
+	</section>	
 				
 				
-				<!-- Datos Interes -->
-				<section class="form_container">
+	<!-- Datos Interes -->
+	<section class="form_container">
 										
-					<header class="titulo">Idioma *</header>
-					<select name="idioma">
-					   <option value="espanol">Español</option> 
-					   <option value="ingles">Inglés</option> 
-					   <option value="otro">Otro</option>					   
-					</select>
+			<header class="titulo">Idioma *</header>
+			<select name="idioma">
+        		   <option value="espanol">Español</option> 
+			   <option value="ingles">Inglés</option> 
+			   <option value="otro">Otro</option>					   
+			</select>
 					
-					<header class="titulo">Profesión</header>
-					<input type="text" name="profesion" placeholder="¿A qué te dedicas?"> 
+			<header class="titulo">Profesión</header>
+			<input type="text" name="profesion" id="profesion"placeholder="¿A qué te dedicas?"> 
+                        
 					
-					<header class="titulo">Aficiones</header>
-					<textarea name="aficiones" cols="50" rows="5" placeholder="¿Cuales son tus aficiones?"></textarea> 
+			<header class="titulo">Aficiones</header>
+			<textarea name="aficiones" id="aficiones" cols="50" rows="5" placeholder="¿Cuales son tus aficiones?"></textarea> 
 					
-					<header class="titulo">Disponibilidad *</header>
-					<input type="text" name="disponibilidad" placeholder="Horario en el que te conectas"> 
-										
-				<!-- Cierre Datos Interes -->
-				</section>	
+			<header class="titulo">Disponibilidad *</header>
+			<input type="text" name="disponibilidad" id="disponibilidad" placeholder="Horario en el que te conectas" onclick="style.borderColor='';invisible('disponibilidad')"> 
+		        </br><span id="mDispon"></span>						
+			<!-- Cierre Datos Interes -->
+		</section>	
 			
 			
-				<!-- Borrar y Enviar -->				
-				<section class="form_container botones">				
+			<!-- Borrar y Enviar -->				
+		<section class="form_container botones">				
 					
-					<input type="reset" value="Borrar" class="boton">
-					<input type="submit" value="Enviar" class="boton">
+                    <input type="reset" id="borrar" value="Borrar" class="boton">
+	            <input type="submit" id="enviar" value="Enviar" class="boton">
 				
-				<!-- Cierre Borrar y Enviar -->
-				</section>	
+                	<!-- Cierre Borrar y Enviar -->
+		</section>	
 				
 			<!-- Cierre de formulario -->
-			</form>
+          </form>
+           
 			
 		<!-- Cierre Contenedor principal -->
 		</section>	
 		
 		<!-- Totalidad del pie -->
 		<footer>				
-			<!-- Contenedor del pie -->
-			<div class="foot-container">
+		<!-- Contenedor del pie -->
+		<div class="foot-container">
 			
-				<ul class="foot_links">
-					<!-- MAPA --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Mapa</header>
-						<nav class= "list">Inicio</nav>
-						<nav class= "list">Avatar</nav>
-						<nav class= "list">Usuarios</nav>
-						<nav class= "list">Viajes</nav>					
-					</li>	
+			<ul class="foot_links">
+			<!-- MAPA --> 
+	                   <li class="foot-item">					
+				<header class= "cabecera">Mapa</header>
+				<nav class= "list">Inicio</nav>
+				<nav class= "list">Avatar</nav>
+				<nav class= "list">Usuarios</nav>
+				<nav class= "list">Viajes</nav>					
+			   </li>	
 
-					<!-- INTERES --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Interés</header>
-						<nav class= "list">Skype</nav>
-						<nav class= "list">Flickr</nav>
-						<nav class= "list">Tumblr</nav>								
-					</li>
+			<!-- INTERES --> 
+			   <li class="foot-item">					
+				<header class= "cabecera">Interés</header>
+				<nav class= "list">Skype</nav>
+				<nav class= "list">Flickr</nav>
+				<nav class= "list">Tumblr</nav>								
+			   </li>
 					
-					<!--  --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Interés</header>
-						<nav class= "list">Skype</nav>
-						<nav class= "list">Flickr</nav>
-						<nav class= "list">Tumblr</nav>								
-					</li>
+			<!--  --> 
+	         	   <li class="foot-item">					
+				<header class= "cabecera">Interés</header>
+				<nav class= "list">Skype</nav>
+				<nav class= "list">Flickr</nav>
+				<nav class= "list">Tumblr</nav>								
+			   </li>
 					
-					<!--  --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Interés</header>
-						<nav class= "list">Skype</nav>
-						<nav class= "list">Flickr</nav>
-						<nav class= "list">Tumblr</nav>								
-					</li>
+			<!--  --> 
+			    <li class="foot-item">					
+				<header class= "cabecera">Interés</header>
+				<nav class= "list">Skype</nav>
+				<nav class= "list">Flickr</nav>
+				<nav class= "list">Tumblr</nav>								
+			     </li>
 											
-					<!-- CONTACTA --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Contacta</header>
-						<nav class= "list">659258023</nav>
-						<nav class= "list">yaketyyak@yaketyyak.com</nav>			
-					</li>
-				</ul>
+			<!-- CONTACTA --> 
+			     <li class="foot-item">					
+				<header class= "cabecera">Contacta</header>
+				<nav class= "list">659258023</nav>
+				<nav class= "list">yaketyyak@yaketyyak.com</nav>			
+			     </li>
+			</ul>
 				
-				<ul class="foot_aside">				
-					<!-- Parte SOCIAL -->
-					<li>
-						<img src="img/icons/twitter.png"/>
-						<img src="img/icons/g+.png"/>						
-						<img src="img/icons/facebook.png"/>
-					</li>					
-				</ul>						
-			</div>
+			<ul class="foot_aside">				
+			<!-- Parte SOCIAL -->
+			      <li>
+                               	<img src="img/icons/twitter.png"/>
+				<img src="img/icons/g+.png"/>						
+				<img src="img/icons/facebook.png"/>
+			       </li>					
+			</ul>						
+		</div>
 			
-			<!-- foot movil -->
+		<!-- foot movil -->
 			<nav class="foot-movil">
 				<img class="foot_img"src="img/icons/email.png"/>
 				<img class="foot_img"src="img/icons/facebook.png"/>
