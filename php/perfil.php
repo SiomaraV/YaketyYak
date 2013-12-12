@@ -18,15 +18,6 @@
 		<!-- Caracteres especiales -->
 		<meta charset="utf-8" />
 
-		<style>
-			#addEmail_cont{
-				
-			}
-
-			#addEmail_contmod{
-							
-			}
-		</style>
 	</head>
 	
 	<body>
@@ -144,7 +135,7 @@
 							<tr>
 								<!-- cambiar nombre -->
 								<td><span class="datos">Nuevo nombre: </span></td>
-								<td><input type="text" name="newname" value="<?php $user_info[0];?>" placeholder="<?php echo $user_info[0];?>"></td>
+								<td><input type="text" name="newname" placeholder="<?php echo $user_info[0];?>"></td>
 							</tr>
 							<tr>
 								<!-- cambiar apellidos -->
@@ -162,9 +153,9 @@
 								<!-- cambiar sexo -->
 								<td><span class="datos">Nuevo sexo: </span></td>
 								<td><select name="newsexo">
-									<option value="hombre">Hombre</option> 
-									<option value="mujer">Mujer</option> 
-									 <option value="indeterminado">Indeterminado</option>					   
+									<option value="Hombre">Hombre</option> 
+									<option value="Mujer" selected>Mujer</option> 
+									<option value="Indeterminado">Indeterminado</option>					   
 								</select></td>
 							</tr>
 							<tr>	

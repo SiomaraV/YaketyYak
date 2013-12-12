@@ -79,7 +79,6 @@
 		fwrite($fichero, $user_info[11]); 
 		fwrite($fichero, $user_info[12]); 
 		fwrite($fichero, $user_info[13]); 
-		fwrite($fichero, $user_info[14]);  
 
 		//cerramos fichero
         fclose($fichero);     
@@ -116,7 +115,6 @@
 			fwrite($fichero, $user_info[11]); 
 			fwrite($fichero, $user_info[12]); 
 			fwrite($fichero, $user_info[13]); 
-			fwrite($fichero, $user_info[14]);  
 
 			//cerramos fichero
             fclose($fichero);
@@ -166,7 +164,6 @@
 		fwrite($fichero, "$newaficiones \r\n"); 
 		fwrite($fichero, "$newdisponibilidad \r\n"); 
 		fwrite($fichero, $user_info[13]); 
-		fwrite($fichero, $user_info[14]);  
 
 		//cerramos fichero
         fclose($fichero);     
@@ -203,7 +200,6 @@
 			fwrite($fichero, $user_info[11]); 
 			fwrite($fichero, $user_info[12]); 
 			fwrite($fichero, $user_info[13]); 
-			fwrite($fichero, $user_info[14]);  
 
 			//cerramos fichero
             fclose($fichero);
@@ -212,22 +208,52 @@
 	
 
 	///////////////////// EMAIL SECUNDARIO /////////////////////
-	if(isset($_REQUEST['esecond']) and isset($_REQUEST['esecond_conf'])){
+	if(isset($_REQUEST['esecond']) and isset($_REQUEST['esecond_conf'])){		
 
 		//recuperamos valores introducidos
 		$esecond = $_REQUEST['esecond'];
 		$esecond_conf = $_REQUEST['esecond_conf'];
 
-		//si los dos email son iguales..
+		//si los dos emails secundarios son iguales...
 		if($esecond == $esecond_conf){
-			//abrimos fichero
-			$fichero = fopen("fichero.txt", "a");
-			//escribimos emails
-			fwrite($fichero, "$esecond \r\n");
-			//cerramos fichero
-			fclose($fichero);
-		}
+
+			//si el email secundario no existe se añade
+			if(empty($user_info[14])){
+				//abrimos fichero
+				$fichero = fopen("fichero.txt", "a");
+				//escribimos emails
+				fwrite($fichero, "$esecond \r\n");
+				//cerramos fichero
+				fclose($fichero);
+		
+			}else{
+				//abrimos de nuevo el fichero
+				$fichero = fopen("fichero.txt", "w");
+
+				//volvemos a escribir todo con la modificacion 
+				fwrite($fichero, $user_info[0]); 
+				fwrite($fichero, $user_info[1]); 
+				fwrite($fichero, $user_info[2]); 
+				fwrite($fichero, $user_info[3]); 
+				fwrite($fichero, $user_info[4]);
+				fwrite($fichero, $user_info[5]); 
+				fwrite($fichero, $user_info[6]);  
+				fwrite($fichero, $user_info[7]); 
+				fwrite($fichero, $user_info[8]); 
+				fwrite($fichero, $user_info[9]); 
+				fwrite($fichero, $user_info[10]);
+				fwrite($fichero, $user_info[11]); 
+				fwrite($fichero, $user_info[12]); 
+				fwrite($fichero, $user_info[13]); 
+				fwrite($fichero, "$esecond \r\n");
+
+				//cerramos fichero
+		        fclose($fichero);
+			}
+		}					
 	}
 
+
+	//redirigimos a perfil.php para ver los cambios pertinentes
 	header("Location:perfil.php");	
 ?>
