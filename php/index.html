@@ -1,196 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<!-- Título de la página -->
-		<title>Yakkety Yak</title>
-		
-		<!-- Hoja de estilos general -->
-		<link rel="stylesheet" type="text/css" href="css/base.css"/>	
-		
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico">
-		
-		<!-- Caracteres especiales -->
-		<meta charset="utf-8" />
+  <head>
+      <meta charset="utf-8">
+      <!-- Activar zoom moviles -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Enlace jquery para slide -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<!-- Enlace archivo js para slide -->
-		<script src="js/responsive_slide.js"></script>
-		<!-- Codigo js para slide-->
-		<script>
-		    $(window).load(function() {
-		      	$(".rslides").responsiveSlides({
-		        	maxwidth: 1000,
-		        	speed: 800
-		      	});
-		    });
-		</script>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="img/icon/favicon.ico">
 
-		<style>
-			/* menu sin loguear */
-			.default{
-				
-			}
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
 
-			/* menu logueado */
-			.logueado{
-				display:none;
-			}
-		</style>
-	</head>
-	
-	<body>
-		<!-- Totalidad del menu -->
-		<header class="menu">	
-			
-			<!-- Contenedor del menu por defecto -->
-			<header class="menu-container default">
-				<!-- Imagen del logo -->
-				<nav class="logo_container"><span class="logo"><a class="logo_link" href="index.html">YakettyYak</a></span></nav>				
+      <!-- Enlace librerias js-->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
 
-				<!-- Navegador -->	
-				<nav class="login-item"><a href="login.php">Entra</a></nav>
-			 	<nav class="login-item reg"><a href="registro.html">Registrar</a></nav>
-			  	<nav class="lan-item">ES</nav>
-			<!-- Cierre Contenedor del menu -->		
-			</header>	
+      <title>Yaketty Yak</title>
 
-			<!-- Contenedor del menu cuando te logueas -->
-			<header class="menu-container logueado">
-				<!-- Imagen del logo -->
-				<nav class="logo_container"><img class="logo_img" src="img/logo.png"></nav>				
+      <script type="text/javascript">
 
-				<!-- Navegador -->					
-			 	<nav><img class="logo_button" src="img/icons/settings.png"></nav>
-			 	<nav><img class="logo_button" src="img/icons/logout.png"></nav>
-			 	<nav><img class="logo_button" src="img/icons/default_user.png"></nav>
-			  	<nav class="lan-item">ES</nav>
-			<!-- Cierre Contenedor del menu -->		
-			</header>
+          // Activar slide
+          $('.carousel').carousel({
+              interval: 200
+          })
 
-			<!-- menu movil -->
-			<nav class="menu-movil">
-				<img class="img_movil"src="img/icons/home.png"/>
-				<img class="img_movil"src="img/icons/search.png"/>
-				<img class="img_movil"src="img/icons/user.png"/>
-			<!-- Cierre menu del movil -->		
-			</nav>
+      </script>
 
-		<!-- Cierre de Totalidad del menu -->	
-		</header>
-		
-		<!-- Contenedor principal -->
-		<section class="container">
-			
-			<!-- Imagenes introductorias de la pagina -->
-			<section class="intro_container">
-				<!-- Slide -->				
-				<ul class="rslides">
-					<li><img src="img/slide/intro.jpg" alt=""></li>
-				  	<li><img src="img/slide/profile.jpg" alt=""></li>
-				  	<li><img src="img/slide/friends.jpg" alt=""></li>
-				  	<li><img src="img/slide/travelling.jpg" alt=""></li>
-				</ul>
-			</section>			
-			
-			<!-- Contenedores de opciones -->
-			<section class="options-container">
-				<article class="flex-item">					
-					<img class="options" src="img/options_index/new.jpg">								
-					<header class="titulo">CREA UN PERFIL</header>
-					<aside>Crea tu perfil personal y entra en la comunidad</aside>						
-				</article>
-					  
-				<article class="flex-item">
-					<img class="options" src="img/options_index/map.jpg">							
-					<header class="titulo">ELIGE UN PAÍS</header>
-					<aside>Elige el país donde quieres conocer gente</aside>		
-				</article>
-					
-				<article class="flex-item">
-					<img class="options" src="img/options_index/talk.jpg">							
-					<header class="titulo">HABLA CON GENTE</header>
-					<aside>Manten una conversación con quien y cómo quieras</aside>		
-				</article>
-					
-				<article class="flex-item">
-					<img class="options" src="img/options_index/travel.jpg">							
-					<header class="titulo">PLANIFICA TU VIAJE</header>
-					<aside>Planifica y personaliza el viaje a tu próximo destino </aside>		
-				</article>
-			<!-- Cierre Contenedores de opciones -->
-			</section>	
-		<!-- Cierre Contenedor principal -->
-		</section>			
-		
-		<!-- Totalidad del pie -->
-		<footer>				
-			<!-- Contenedor del pie -->
-			<div class="foot-container">
-			
-				<ul class="foot_links">
-					<!-- MAPA --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Mapa</header>
-						<nav class= "list">Inicio</nav>
-						<nav class= "list">Avatar</nav>
-						<nav class= "list">Usuarios</nav>
-						<nav class= "list">Viajes</nav>	
-						<nav class= "list">Galerias</nav>				
-					</li>	
+      <style>
+        @media (min-width: 800px) {
+          .container {
+            max-width: 1000px;
+          }
+        }
 
-					<!-- INTERES --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Interés</header>
-						<nav class= "list">Skype</nav>
-						<nav class= "list">Flickr</nav>
-						<nav class= "list">Tumblr</nav>								
-					</li>
-					
-					<!--  --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Interés</header>
-						<nav class= "list">Skype</nav>
-						<nav class= "list">Flickr</nav>
-						<nav class= "list">Tumblr</nav>								
-					</li>
-					
-					<!--  --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Interés</header>
-						<nav class= "list">Skype</nav>
-						<nav class= "list">Flickr</nav>
-						<nav class= "list">Tumblr</nav>								
-					</li>
-											
-					<!-- CONTACTA --> 
-					<li class="foot-item">					
-						<header class= "cabecera">Contacta</header>
-						<nav class= "list">659258023</nav>
-						<nav class= "list">yaketyyak@yaketyyak.com</nav>			
-					</li>
-				</ul>
-				
-				<ul class="foot_aside">				
-					<!-- Parte SOCIAL -->
-					<li>
-						<img src="img/icons/twitter_on.png" onmouseover="this.src='img/icons/twitter.png';" onmouseout="this.src='img/icons/twitter_on.png';"/>
-						<img src="img/icons/g+_on.png" onmouseover="this.src='img/icons/g+.png';" onmouseout="this.src='img/icons/g+_on.png';"/>						
-						<img src="img/icons/facebook_on.png" onmouseover="this.src='img/icons/facebook.png';" onmouseout="this.src='img/icons/facebook_on.png';"/>
-					</li>					
-				</ul>						
-			</div>
-			
-			<!-- foot movil -->
-			<nav class="foot-movil">
-				<img class="foot_img" src="img/icons/email.png"/>
-				<img class="foot_img"src="img/icons/facebook.png"/>
-				<img class="foot_img"src="img/icons/g+.png"/>
-				<img class="foot_img"src="img/icons/twitter.png"/>
-			<!-- Cierre foot del movil -->		
-			</nav>
-		<!-- Cierre de del Pie -->	
-		</footer>
-	</body>	
+        #carousel-example-generic{
+          margin-bottom: 20px;
+        }
+
+      </style>
+
+  </head>
+
+
+  <body>
+
+    <!-- /////////// BARRA DE NAVEGACIÓN /////////// -->
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Yaketty Yak</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="navbar-form navbar-right">            
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#entrar">Entrar</button>
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#registrar">Registrarse</button>
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+
+    <!-- /////////// MODAL LOGIN /////////// -->     
+    <div class="modal fade" id="entrar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title">Identifícate</h3>
+                </div>
+
+                <form role="form">
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="email" class="form-control" id="email_login" placeholder="Introduce tu Email">
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" id="password_login" placeholder="Introduce tu Contraseña">
+                        </div><br> 
+
+                        <p><a href="">Recuperar contraseña</a></p>               
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+              </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- /////////// MODAL REGISTRAR /////////// -->     
+    <div class="modal fade" id="registrar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title">Regístrate</h3>
+                </div>
+
+                <form role="form">
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" id="nick_register" placeholder="Introduce tu Nick">
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="email" class="form-control" id="email_register" placeholder="Introduce tu Email">
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" id="pass_register" placeholder="Introduce tu Contraseña">
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
+                            <input type="text" class="form-control" id="idioma_register" placeholder="Idioma que hablas">
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                            <input type="text" class="form-control" id="pais_register" placeholder="País en el que vives">
+                        </div><br>                              
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Enviar datos</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="container">
+
+      <!-- /////////// SLIDE /////////// -->
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Circulitos indicadores -->
+          <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Imagenes del slide -->
+          <div class="carousel-inner">
+              <div class="item active">
+                  <img class="img-responsive img-full" src="img/slide/intro.jpg" >                  
+              </div>
+
+              <div class="item">
+                  <img class="img-responsive img-full" src="img/slide/profile.jpg" >
+              </div>
+
+              <div class="item">
+                  <img class="img-responsive img-full" src="img/slide/friends.jpg" >
+              </div>
+
+              <div class="item">
+                  <img class="img-responsive img-full" src="img/slide/travelling.jpg" >
+              </div>
+          </div>
+
+          <!-- Flechas -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+
+
+      <!-- /////////// OPCIONES INDEX /////////// -->
+      <div class="row">
+
+        <!-- CREA UN PERFIL -->
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <img src="img/options_index/new.jpg" class="img-responsive img-rounded">
+          <h4 class="text-center">CREA UN PERFIL</h4>
+          <p class="text-center">Crea tu perfil personal y entra en la comunidad. Crea tu perfil personal y entra en la comunidad.</p>
+        </div><!-- /.col-lg-3 -->
+
+        <!-- ELIGE UN PAÍS -->
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <img src="img/options_index/map.jpg" class="img-responsive img-rounded">
+          <h4 class="text-center">ELIGE UN PAÍS</h4>
+          <p class="text-center">Elige el país donde quieres conocer gente. Crea tu perfil personal y entra en la comunidad.</p>
+        </div><!-- /.col-lg-3 -->
+
+        <!-- HABLA CON GENTE -->
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <img src="img/options_index/talk.jpg" class="img-responsive img-rounded">
+          <h4 class="text-center">HABLA CON GENTE</h4>
+          <p class="text-center">Manten una conversación con quien y cómo quieras. Crea tu perfil personal y entra.</p>
+        </div><!-- /.col-lg-3 -->
+
+        <!-- PLANIFICA TU VIAJE -->
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <img src="img/options_index/travel.jpg" class="img-responsive img-rounded">
+          <h4 class="text-center">PLANIFICA TU VIAJE</h4>
+          <p class="text-center">Planifica y personaliza el viaje a tu próximo destino. Crea tu perfil personal y entra en la comunidad.</p>
+        </div><!-- /.col-lg-3 -->
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->    
+
+  </body>
 </html>
